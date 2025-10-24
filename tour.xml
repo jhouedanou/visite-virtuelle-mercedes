@@ -159,10 +159,14 @@
 			tween(layer[info_popup].alpha, 0.0, 0.25, easeInQuad);
 			tween(layer[info_popup].scale, 0.8, 0.25, easeInBack);
 			tween(layer[close_button].alpha, 0.0, 0.25, easeInQuad);
-			tween(layer[close_button].scale, 0.8, 0.25, easeInBack,
+			tween(layer[close_button].scale, 0.8, 0.25, easeInBack);
+			if(layer[contact_button], tween(layer[contact_button].alpha, 0.0, 0.25, easeInQuad); );
+			if(layer[contact_button], tween(layer[contact_button].scale, 0.8, 0.25, easeInBack); );
+			delayedcall(0.25,
 				removelayer(info_popup_bg);
 				removelayer(info_popup);
 				removelayer(close_button);
+				if(layer[contact_button], removelayer(contact_button); );
 			);
 		);
 	</action>
@@ -254,6 +258,7 @@
 		if(layer[info_popup], removelayer(info_popup); );
 		if(layer[info_popup_bg], removelayer(info_popup_bg); );
 		if(layer[close_button], removelayer(close_button); );
+		if(layer[contact_button], removelayer(contact_button); );
 
 		<!-- Créer un fond semi-transparent -->
 		addlayer(info_popup_bg);
@@ -316,10 +321,35 @@
 			onout=tween(scale|bgcolor, 1.0|0xff0000, 0.2)
 		);
 
-		<!-- Contenu texte GLC Coupé -->
-		set(popup_content, 'GLC Coupé[br]Plus qu[sq]un SUV. Plus qu[sq]un coupé.[br][br]Le GLC Coupé combine les mérites d[sq]un SUV et d[sq]un coupé. Plus sportif et plus avant-gardiste que jamais.[br]');
+		<!-- Contenu texte GLC Coupé avec coordonnées CFAO -->
+		set(popup_content, '<b style="font-size:18px; color:#00adef;">CFAO Mobility Côte d[sq]Ivoire</b>[br][br]01 BP 2114 Abidjan 01[br]117 Boulevard de Marseille[br][br]<b>Tél :</b> 07 01 52 52 52[br]');
 
 		copy(layer[info_popup].html, popup_content);
+
+		<!-- Bouton Contactez-nous -->
+		addlayer(contact_button);
+		set(layer[contact_button],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			y=150,
+			width=200,
+			height=45,
+			bgcolor=0x00adef,
+			bgalpha=1.0,
+			bgroundedge=8,
+			bgshadow=0 4 10 0x000000 0.6,
+			css=color:#ffffff; font-family:Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
+			html=Contactez-nous,
+			zorder=10002,
+			alpha=0,
+			scale=0.8,
+			handcursor=true,
+			onclick=js(window.open('https://www.mercedes-benz-rci.com/fr/concession/', '_blank');),
+			onover=tween(scale|bgcolor, 1.05|0x0090cf, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0x00adef, 0.2)
+		);
 
 		<!-- Animations d'apparition -->
 		tween(layer[info_popup_bg].bgalpha, 0.4, 0.3, easeOutQuad);
@@ -327,6 +357,8 @@
 		tween(layer[info_popup].scale, 1.0, 0.4, easeOutBack);
 		tween(layer[close_button].alpha, 1.0, 0.4, easeOutQuad);
 		tween(layer[close_button].scale, 1.0, 0.4, easeOutBack);
+		tween(layer[contact_button].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[contact_button].scale, 1.0, 0.4, easeOutBack);
 	</action>
 
 	<!-- Action pour afficher la popup GLC 200 -->
@@ -335,6 +367,7 @@
 		if(layer[info_popup], removelayer(info_popup); );
 		if(layer[info_popup_bg], removelayer(info_popup_bg); );
 		if(layer[close_button], removelayer(close_button); );
+		if(layer[contact_button], removelayer(contact_button); );
 
 		<!-- Créer un fond semi-transparent -->
 		addlayer(info_popup_bg);
@@ -397,10 +430,35 @@
 			onout=tween(scale|bgcolor, 1.0|0xff0000, 0.2)
 		);
 
-		<!-- Contenu texte GLC 200 -->
-		set(popup_content, 'GLC 200[br]Plus qu[sq]un SUV. Plus qu[sq]un coupé.[br][br]Le GLC Coupé combine les mérites d[sq]un SUV et d[sq]un coupé. Plus sportif et plus avant-gardiste que jamais.[br]');
+		<!-- Contenu texte GLC 200 avec coordonnées CFAO -->
+		set(popup_content, '<b style="font-size:18px; color:#00adef;">CFAO Mobility Côte d[sq]Ivoire</b>[br][br]01 BP 2114 Abidjan 01[br]117 Boulevard de Marseille[br][br]<b>Tél :</b> 07 01 52 52 52[br]');
 
 		copy(layer[info_popup].html, popup_content);
+
+		<!-- Bouton Contactez-nous -->
+		addlayer(contact_button);
+		set(layer[contact_button],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			y=150,
+			width=200,
+			height=45,
+			bgcolor=0x00adef,
+			bgalpha=1.0,
+			bgroundedge=8,
+			bgshadow=0 4 10 0x000000 0.6,
+			css=color:#ffffff; font-family:Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
+			html=Contactez-nous,
+			zorder=10002,
+			alpha=0,
+			scale=0.8,
+			handcursor=true,
+			onclick=js(window.open('https://www.mercedes-benz-rci.com/fr/concession/', '_blank');),
+			onover=tween(scale|bgcolor, 1.05|0x0090cf, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0x00adef, 0.2)
+		);
 
 		<!-- Animations d'apparition -->
 		tween(layer[info_popup_bg].bgalpha, 0.4, 0.3, easeOutQuad);
@@ -408,6 +466,8 @@
 		tween(layer[info_popup].scale, 1.0, 0.4, easeOutBack);
 		tween(layer[close_button].alpha, 1.0, 0.4, easeOutQuad);
 		tween(layer[close_button].scale, 1.0, 0.4, easeOutBack);
+		tween(layer[contact_button].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[contact_button].scale, 1.0, 0.4, easeOutBack);
 	</action>
 
 	<!-- Action pour maintenir le titre constant -->
@@ -442,6 +502,16 @@
 		         atv="0.0"
 		         onclick="show_mercedes_info();"
 		         tooltip="Afficher le showroom"
+		         />
+
+		<!-- Hotspot info CFAO avec icône "i" -->
+		<hotspot name="info_cfao_scene01"
+		         style="info_text_button"
+		         text="i"
+		         ath="20"
+		         atv="-10"
+		         onclick="show_glc_200_info();"
+		         tooltip="CFAO Mobility - Contactez-nous"
 		         />
 
 	</scene>
