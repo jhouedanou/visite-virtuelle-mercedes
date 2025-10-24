@@ -89,7 +89,7 @@
 	<style name="info_button"
 	       type="text"
 	       renderer="webgl"
-	       css="color:#FFFFFF; font-size:16px; font-weight:bold; text-align:center;"
+	       css="color:#FFFFFF; font-size:16px; font-weight:bold; text-align:center; font-family:'Corporate A BQ', Arial;"
 	       textalign="center"
 	       width="80" height="80"
 	       bgroundedge="100"
@@ -132,7 +132,7 @@
 	<style name="info_text_button"
 	       type="text"
 	       renderer="webgl"
-	       css="color:#FFFFFF; font-size:20px; font-weight:bold; text-align:center;"
+	       css="color:#FFFFFF; font-size:20px; font-weight:bold; text-align:center; font-family:'Corporate A BQ', Arial;"
 	       textalign="center"
 	       width="50" height="50"
 	       bgroundedge="100"
@@ -207,7 +207,7 @@
 			bgborder=2 0x00adef 1.0,
 			bgshadow=0 8 24 0x000000 0.8,
 			padding=30,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:15px; line-height:1.6;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:18px; line-height:2;,
 			zorder=10000,
 			alpha=0,
 			scale=0.8
@@ -240,7 +240,7 @@
 		);
 
 		<!-- Contenu texte simple de la popup -->
-		set(popup_content, 'MERCEDES-BENZ[br][br]Découvrez l[sq]excellence automobile allemande. Innovation, luxe et performance réunis dans chaque détail.[br][br]Notre gamme exclusive combine design raffiné et technologies de pointe pour une expérience de conduite incomparable.');
+		set(popup_content, '<b style="font-size:28px; color:#00adef; line-height:1.5; font-family:\'Corporate A BQ\', Arial;">MERCEDES-BENZ</b>[br][br]<span style="font-size:20px; line-height:2; font-family:\'Corporate A BQ\', Arial;">Découvrez l[sq]excellence automobile allemande. Innovation, luxe et performance réunis dans chaque détail.[br][br]Notre gamme exclusive combine design raffiné et technologies de pointe pour une expérience de conduite incomparable.</span>');
 
 		copy(layer[info_popup].html, popup_content);
 
@@ -289,7 +289,7 @@
 			bgborder=2 0x00adef 1.0,
 			bgshadow=0 8 24 0x000000 0.8,
 			padding=30,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:18px; line-height:1.8;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:20px; line-height:2;,
 			zorder=10000,
 			alpha=0,
 			scale=0.8
@@ -322,7 +322,7 @@
 		);
 
 		<!-- Contenu texte GLC Coupé -->
-		set(popup_content, '<b style="font-size:24px; color:#00adef;">GLC Coupé</b>[br][br]Plus qu[sq]un SUV. Plus qu[sq]un coupé.[br][br]Le GLC Coupé combine les mérites d[sq]un SUV et d[sq]un coupé. Plus sportif et plus avant-gardiste que jamais.[br]');
+		set(popup_content, '<b style="font-size:30px; color:#00adef; line-height:1.4; font-family:\'Corporate A BQ\', Arial;">GLC Coupé</b>[br][br]<span style="font-size:20px; line-height:2; font-family:\'Corporate A BQ\', Arial;">Plus qu[sq]un SUV. Plus qu[sq]un coupé.[br][br]Le GLC Coupé combine les mérites d[sq]un SUV et d[sq]un coupé. Plus sportif et plus avant-gardiste que jamais.</span>[br]');
 
 		copy(layer[info_popup].html, popup_content);
 
@@ -335,14 +335,14 @@
 			edge=center,
 			vcenter=true,
 			y=150,
-			width=200,
-			height=45,
+			width=240,
+			height=60,
 			bgcolor=0x00adef,
 			bgalpha=1.0,
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
 			textalign=center,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:18px; font-weight:bold; text-align:center; line-height:45px;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
 			html=Découvrir le GLC Coupé,
 			zorder=10002,
 			alpha=0,
@@ -400,7 +400,7 @@
 			bgborder=2 0x00adef 1.0,
 			bgshadow=0 8 24 0x000000 0.8,
 			padding=30,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:18px; line-height:1.8;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:20px; line-height:2;,
 			zorder=10000,
 			alpha=0,
 			scale=0.8
@@ -433,7 +433,7 @@
 		);
 
 		<!-- Contenu texte GLC 200 avec coordonnées CFAO -->
-		set(popup_content, '<b style="font-size:22px; color:#00adef;">CFAO Mobility Côte d[sq]Ivoire</b>[br][br]01 BP 2114 Abidjan 01[br]117 Boulevard de Marseille[br][br]<b>Tél :</b> 07 01 52 52 52[br]');
+		set(popup_content, '<b style="font-size:28px; color:#00adef; line-height:1.5; font-family:\'Corporate A BQ\', Arial;">CFAO Mobility Côte d[sq]Ivoire</b>[br][br]<span style="font-size:20px; line-height:2; font-family:\'Corporate A BQ\', Arial;">01 BP 2114 Abidjan 01[br]117 Boulevard de Marseille[br][br]<b>Tél :</b> 07 01 52 52 52</span>[br]');
 
 		copy(layer[info_popup].html, popup_content);
 
@@ -446,14 +446,14 @@
 			edge=center,
 			vcenter=true,
 			y=150,
-			width=200,
-			height=45,
+			width=240,
+			height=60,
 			bgcolor=0x00adef,
 			bgalpha=1.0,
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
 			textalign=center,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:45px;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
 			html=Contactez-nous,
 			zorder=10002,
 			alpha=0,
@@ -479,8 +479,18 @@
 		js(document.title = 'Mercedes Benz by CFAO - Visite virtuelle');
 	</action>
 
+	<!-- Action pour retirer les tooltips des hotspots de navigation -->
+	<action name="clear_skin_hotspot_tooltips">
+		set(style[skin_hotspotstyle].tooltip, '');
+		for(set(i, 0); i LT hotspot.count; inc(i),
+			if(hotspot[get(i)].style == 'skin_hotspotstyle',
+				set(hotspot[get(i)].tooltip, '');
+			);
+		);
+	</action>
+
 	<!-- Événement global : maintenir le titre à chaque changement de scène -->
-	<events name="global_events" onloadcomplete="set_page_title();" />
+	<events name="global_events" onloadcomplete="set_page_title(); clear_skin_hotspot_tooltips();" />
 
 	<!-- Logo dans le header -->
 	<layer name="header_logo"
