@@ -769,6 +769,16 @@
 		<hotspot name="spot1834239417" style="skin_hotspotstyle" ath="138.052" atv="21.327" depth="1000.0" linkedscene="scene_15_denoiseai_standard" linkedscene_lookat="52.13,2.02,119.72" linkedscene_spot="spot1834239167" linkedscene_hoffset="46.56" use3dtransition="true" />
 		<hotspot name="spot1834239802" style="skin_hotspotstyle" ath="31.271" atv="32.18" depth="1000.0" linkedscene="scene_17_denoiseai_standard" linkedscene_lookat="106.72,9.39,120.0" linkedscene_spot="spot1834240411" linkedscene_hoffset="-13.41" use3dtransition="true" />
 
+		<!-- Hotspot info GLC 200 -->
+		<hotspot name="info_glc_200_scene16"
+		         style="info_text_button"
+		         text="i"
+		         ath="0"
+		         atv="-10"
+		         onclick="show_glc_200_info();"
+		         tooltip="GLC 200"
+		         />
+
 	</scene>
 
 	<scene name="scene_17_denoiseai_standard" title="17-DeNoiseAI-standard" onstart="" thumburl="panos/17_DeNoiseAI_standard.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
