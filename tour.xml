@@ -410,8 +410,17 @@
 		tween(layer[close_button].scale, 1.0, 0.4, easeOutBack);
 	</action>
 
+	<!-- Action pour maintenir le titre constant -->
+	<action name="set_page_title">
+		set(page_title, 'Mercedes Benz by CFAO - Visite virtuelle');
+		js(document.title = get(page_title));
+	</action>
 
-	<scene name="scene_01_denoiseai_standard" title="01-DeNoiseAI-standard" onstart="" thumburl="panos/01_DeNoiseAI_standard.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<!-- Événement global : maintenir le titre à chaque changement de scène -->
+	<events name="global_events" onloadcomplete="set_page_title();" />
+
+
+	<scene name="scene_01_denoiseai_standard" title="01-DeNoiseAI-standard" onstart="set_page_title();" thumburl="panos/01_DeNoiseAI_standard.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
