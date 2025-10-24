@@ -19,19 +19,19 @@
 	               littleplanetintro="true"
 	               followmousecontrol="false"
 	               title="true"
-	               thumbs="false"
+	               thumbs="true"
 	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
-	               thumbs_opened="false"
-	               thumbs_text="false"
+	               thumbs_opened="true"
+	               thumbs_text="true"
 	               thumbs_dragging="true"
-	               thumbs_onhoverscrolling="false"
-	               thumbs_scrollbuttons="false"
-	               thumbs_scrollindicator="false"
+	               thumbs_onhoverscrolling="true"
+	               thumbs_scrollbuttons="true"
+	               thumbs_scrollindicator="true"
 	               thumbs_loop="false"
-	               tooltips_buttons="false"
-	               tooltips_thumbs="false"
-	               tooltips_hotspots="false"
-	               tooltips_mapspots="false"
+	               tooltips_buttons="true"
+	               tooltips_thumbs="true"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="true"
 	               deeplinking="false"
 	               loadscene_flags="MERGE"
 	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
@@ -109,7 +109,7 @@
 
 	<!-- Style pour hotspot navigation intérieur avec icône freepik arrondie -->
 	<style name="interior_hotspotstyle"
-	       url="skin/freepik__talk__64185.png"
+	       url="skin/upscalemedia-transformed.png"
 	       scale="0.35"
 	       edge="center"
 	       distorted="true"
@@ -318,6 +318,87 @@
 
 		<!-- Contenu texte GLC Coupé -->
 		set(popup_content, 'GLC Coupé[br]Plus qu[sq]un SUV. Plus qu[sq]un coupé.[br][br]Le GLC Coupé combine les mérites d[sq]un SUV et d[sq]un coupé. Plus sportif et plus avant-gardiste que jamais.[br]');
+
+		copy(layer[info_popup].html, popup_content);
+
+		<!-- Animations d'apparition -->
+		tween(layer[info_popup_bg].bgalpha, 0.4, 0.3, easeOutQuad);
+		tween(layer[info_popup].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[info_popup].scale, 1.0, 0.4, easeOutBack);
+		tween(layer[close_button].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[close_button].scale, 1.0, 0.4, easeOutBack);
+	</action>
+
+	<!-- Action pour afficher la popup GLC 200 -->
+	<action name="show_glc_200_info">
+		<!-- Fermer la popup si elle existe déjà -->
+		if(layer[info_popup], removelayer(info_popup); );
+		if(layer[info_popup_bg], removelayer(info_popup_bg); );
+		if(layer[close_button], removelayer(close_button); );
+
+		<!-- Créer un fond semi-transparent -->
+		addlayer(info_popup_bg);
+		set(layer[info_popup_bg],
+			type=container,
+			align=lefttop,
+			width=100%,
+			height=100%,
+			zorder=9999,
+			bgcolor=0x000000,
+			bgalpha=0,
+			bgcapture=true,
+			onclick=close_info_popup()
+		);
+
+		<!-- Créer la popup -->
+		addlayer(info_popup);
+		set(layer[info_popup],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			width=500,
+			height=auto,
+			bgcolor=0x1a1a1a,
+			bgalpha=0.95,
+			bgroundedge=12,
+			bgborder=2 0x00adef 1.0,
+			bgshadow=0 8 24 0x000000 0.8,
+			padding=30,
+			css=color:#ffffff; font-family:Arial; font-size:15px; line-height:1.8;,
+			zorder=10000,
+			alpha=0,
+			scale=0.8
+		);
+
+		<!-- Bouton fermer (croix blanche sur fond rouge) -->
+		addlayer(close_button);
+		set(layer[close_button],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			x=250,
+			y=-200,
+			width=40,
+			height=40,
+			bgcolor=0xff0000,
+			bgalpha=1.0,
+			bgroundedge=20,
+			bgshadow=0 4 10 0x000000 0.6,
+			css=color:#ffffff; font-family:Arial; font-size:24px; font-weight:bold; text-align:center;,
+			html=×,
+			zorder=10001,
+			alpha=0,
+			scale=0.8,
+			handcursor=true,
+			onclick=close_info_popup(),
+			onover=tween(scale|bgcolor, 1.1|0xcc0000, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0xff0000, 0.2)
+		);
+
+		<!-- Contenu texte GLC 200 -->
+		set(popup_content, 'GLC 200[br]Plus qu[sq]un SUV. Plus qu[sq]un coupé.[br][br]Le GLC Coupé combine les mérites d[sq]un SUV et d[sq]un coupé. Plus sportif et plus avant-gardiste que jamais.[br]');
 
 		copy(layer[info_popup].html, popup_content);
 
@@ -596,7 +677,31 @@
 		</image>
 
 		<hotspot name="spot1834237530" style="skin_hotspotstyle" ath="88.962" atv="38.094" depth="1000.0" linkedscene="scene_12_denoiseai_standard" linkedscene_lookat="-32.15,13.84,120.0" linkedscene_spot="spot1834237321" linkedscene_hoffset="-2.09" use3dtransition="true" />
-		<hotspot name="spot1834237660" style="skin_hotspotstyle" ath="-4.257" atv="6.869" depth="1000.0" linkedscene="scene_13_interieur" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834237793" linkedscene_hoffset="360.0" use3dtransition="true" />
+
+		<!-- Hotspot pour entrer dans la voiture GLC 200 -->
+		<hotspot name="spot1834237660"
+		         style="interior_hotspotstyle"
+		         ath="-4.257"
+		         atv="6.869"
+		         depth="1000.0"
+		         linkedscene="scene_13_interieur"
+		         linkedscene_lookat="0.0,0.0,120.0"
+		         linkedscene_spot="spot1834237793"
+		         linkedscene_hoffset="360.0"
+		         use3dtransition="true"
+		         tooltip="Entrer dans la GLC 200"
+		         />
+
+		<!-- Hotspot info GLC 200 -->
+		<hotspot name="info_glc_200_scene13"
+		         style="info_text_button"
+		         text="i"
+		         ath="-15"
+		         atv="-5"
+		         onclick="show_glc_200_info();"
+		         tooltip="GLC 200"
+		         />
+
 		<hotspot name="spot1834237958" style="skin_hotspotstyle" ath="-69.32" atv="22.634" depth="1000.0" linkedscene="scene_15_denoiseai_standard" linkedscene_lookat="49.6,1.04,120.0" linkedscene_spot="spot1834238204" linkedscene_hoffset="339.34" use3dtransition="true" />
 
 	</scene>
