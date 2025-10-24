@@ -47,8 +47,8 @@
 	               controlbar_overlap.no-fractionalscaling="10"
 	               controlbar_overlap.fractionalscaling="0"
 	               design_skin_images="vtourskin.png"
-	               design_bgcolor="0x2D3E50"
-	               design_bgalpha="0.8"
+	               design_bgcolor="0x000000"
+	               design_bgalpha="0.7"
 	               design_bgborder="0"
 	               design_bgroundedge="1"
 	               design_bgshadow="0 4 10 0x000000 0.3"
@@ -289,7 +289,7 @@
 			bgborder=2 0x00adef 1.0,
 			bgshadow=0 8 24 0x000000 0.8,
 			padding=30,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:15px; line-height:1.8;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:18px; line-height:1.8;,
 			zorder=10000,
 			alpha=0,
 			scale=0.8
@@ -322,7 +322,7 @@
 		);
 
 		<!-- Contenu texte GLC Coupé -->
-		set(popup_content, '<b style="font-size:20px; color:#00adef;">GLC Coupé</b>[br][br]Plus qu[sq]un SUV. Plus qu[sq]un coupé.[br][br]Le GLC Coupé combine les mérites d[sq]un SUV et d[sq]un coupé. Plus sportif et plus avant-gardiste que jamais.[br]');
+		set(popup_content, '<b style="font-size:24px; color:#00adef;">GLC Coupé</b>[br][br]Plus qu[sq]un SUV. Plus qu[sq]un coupé.[br][br]Le GLC Coupé combine les mérites d[sq]un SUV et d[sq]un coupé. Plus sportif et plus avant-gardiste que jamais.[br]');
 
 		copy(layer[info_popup].html, popup_content);
 
@@ -341,7 +341,7 @@
 			bgalpha=1.0,
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:18px; font-weight:bold; text-align:center; line-height:45px;,
 			html=Découvrir le GLC Coupé,
 			zorder=10002,
 			alpha=0,
@@ -399,7 +399,7 @@
 			bgborder=2 0x00adef 1.0,
 			bgshadow=0 8 24 0x000000 0.8,
 			padding=30,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:15px; line-height:1.8;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:18px; line-height:1.8;,
 			zorder=10000,
 			alpha=0,
 			scale=0.8
@@ -432,7 +432,7 @@
 		);
 
 		<!-- Contenu texte GLC 200 avec coordonnées CFAO -->
-		set(popup_content, '<b style="font-size:18px; color:#00adef;">CFAO Mobility Côte d[sq]Ivoire</b>[br][br]01 BP 2114 Abidjan 01[br]117 Boulevard de Marseille[br][br]<b>Tél :</b> 07 01 52 52 52[br]');
+		set(popup_content, '<b style="font-size:22px; color:#00adef;">CFAO Mobility Côte d[sq]Ivoire</b>[br][br]01 BP 2114 Abidjan 01[br]117 Boulevard de Marseille[br][br]<b>Tél :</b> 07 01 52 52 52[br]');
 
 		copy(layer[info_popup].html, popup_content);
 
@@ -451,7 +451,7 @@
 			bgalpha=1.0,
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:18px; font-weight:bold; text-align:center; line-height:45px;,
 			html=Contactez-nous,
 			zorder=10002,
 			alpha=0,
@@ -479,6 +479,42 @@
 
 	<!-- Événement global : maintenir le titre à chaque changement de scène -->
 	<events name="global_events" onloadcomplete="set_page_title();" />
+
+	<!-- Header personnalisé avec logo et texte -->
+	<layer name="header_bg"
+	       type="container"
+	       align="top"
+	       width="100%"
+	       height="80"
+	       y="0"
+	       bgcolor="0x000000"
+	       bgalpha="1.0"
+	       zorder="9999"
+	       />
+
+	<!-- Logo dans le header -->
+	<layer name="header_logo"
+	       url="skin/Logo.png"
+	       align="lefttop"
+	       x="20"
+	       y="10"
+	       height="60"
+	       width="prop"
+	       zorder="10000"
+	       />
+
+	<!-- Texte dans le header -->
+	<layer name="header_text"
+	       type="text"
+	       html="&lt;span style='font-size:2.4rem; letter-spacing:1px;'&gt;Mercedes-Benz&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:1.4rem;'&gt;CFAO Mobility - Côte d'Ivoire&lt;/span&gt;"
+	       align="righttop"
+	       x="20"
+	       y="15"
+	       width="auto"
+	       height="auto"
+	       css="color:#ffffff; font-family:'Corporate A BQ', Arial; font-weight:300;"
+	       zorder="10000"
+	       />
 
 
 	<scene name="scene_01_denoiseai_standard" title="01-DeNoiseAI-standard" onstart="set_page_title();" thumburl="panos/01_DeNoiseAI_standard.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
