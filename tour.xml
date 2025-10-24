@@ -627,6 +627,7 @@
 
 		<hotspot name="spot1834233054" style="skin_hotspotstyle" ath="176.205" atv="23.983" depth="1000.0" linkedscene="scene_05_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834232803" linkedscene_hoffset="1.63" use3dtransition="true" />
 		<hotspot name="spot1834233207" style="skin_hotspotstyle" ath="-42.014" atv="20.804" depth="1000.0" linkedscene="scene_09_2_denoiseai_standard" linkedscene_lookat="-14.58,1.78,120.0" linkedscene_spot="spot1834233581" linkedscene_hoffset="335.17" use3dtransition="true" />
+		<hotspot name="spot1834926317" style="skin_hotspotstyle" ath="34.398" atv="18.184" depth="1000.0" linkedscene="scene_29_denoiseai_standard" linkedscene_lookat="18.15,-4.57,120.0" linkedscene_spot="spot1834926797" linkedscene_hoffset="-1.35" use3dtransition="true" />
 		
 
 	</scene>
@@ -1273,6 +1274,9 @@
 		</image>
 
 		<hotspot name="spot1834276134" style="skin_hotspotstyle" ath="261.581" atv="19.481" depth="1000.0" linkedscene="scene_09_2_denoiseai_standard" linkedscene_lookat="100.8,-4.39,140.0" linkedscene_spot="spot1834275795" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot1834926797" style="skin_hotspotstyle" ath="-146.95" atv="29.002" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="18.15,-4.57,120.0" linkedscene_spot="spot1834926317" linkedscene_hoffset="361.35" use3dtransition="true" />
+		<hotspot name="spot1834927075" style="skin_hotspotstyle" ath="78.251" atv="17.414" depth="1000.0" linkedscene="scene_31_denoiseai_standard" linkedscene_lookat="65.98,3.08,120.0" linkedscene_spot="spot1834927460" linkedscene_hoffset="1.23" use3dtransition="true" />
+		<hotspot name="spot1834927732" style="skin_hotspotstyle" ath="33.805" atv="10.861" depth="1000.0" linkedscene="scene_30b_denoiseai_standard" linkedscene_lookat="-7.32,-0.17,120.0" />
 
 	</scene>
 
@@ -1344,6 +1348,7 @@
 
 		<hotspot name="spot1834250900" style="skin_hotspotstyle" ath="311.106" atv="23.841" depth="1000.0" linkedscene="scene_30a_denoiseai_standard" linkedscene_lookat="143.79,0.12,120.0" linkedscene_spot="spot1834250681" linkedscene_hoffset="0.0" use3dtransition="true" />
 		<hotspot name="spot1834250994" style="skin_hotspotstyle" ath="62.712" atv="18.983" depth="1000.0" linkedscene="scene_32_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834251242" linkedscene_hoffset="360.0" use3dtransition="true" />
+		<hotspot name="spot1834927460" style="skin_hotspotstyle" ath="-100.523" atv="25.894" depth="1000.0" linkedscene="scene_29_denoiseai_standard" linkedscene_lookat="65.98,3.08,120.0" linkedscene_spot="spot1834927075" linkedscene_hoffset="358.77" use3dtransition="true" />
 
 	</scene>
 
