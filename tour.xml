@@ -494,6 +494,339 @@
 		tween(layer[contact_button].scale, 1.0, 0.4, easeOutBack);
 	</action>
 
+	<!-- Action pour afficher la popup Classe C -->
+	<action name="show_classe_c_info">
+		<!-- Fermer la popup si elle existe déjà -->
+		if(layer[info_popup], removelayer(info_popup); );
+		if(layer[info_popup_bg], removelayer(info_popup_bg); );
+		if(layer[close_button], removelayer(close_button); );
+		if(layer[contact_button], removelayer(contact_button); );
+
+		<!-- Créer un fond semi-transparent -->
+		addlayer(info_popup_bg);
+		set(layer[info_popup_bg],
+			type=container,
+			align=lefttop,
+			width=100%,
+			height=100%,
+			zorder=9999,
+			bgcolor=0x000000,
+			bgalpha=0,
+			bgcapture=true,
+			onclick=close_info_popup()
+		);
+
+		<!-- Créer la popup -->
+		addlayer(info_popup);
+		set(layer[info_popup],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			width=500,
+			height=auto,
+			bgcolor=0x1a1a1a,
+			bgalpha=0.95,
+			bgroundedge=12,
+			bgborder=2 0x00adef 1.0,
+			bgshadow=0 8 24 0x000000 0.8,
+			padding=30,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:20px; line-height:2;,
+			zorder=10000,
+			alpha=0,
+			scale=0.8
+		);
+
+		<!-- Bouton fermer (croix blanche sur fond rouge) -->
+		addlayer(close_button);
+		set(layer[close_button],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			x=250,
+			y=-200,
+			width=40,
+			height=40,
+			bgcolor=0xff0000,
+			bgalpha=1.0,
+			bgroundedge=20,
+			bgshadow=0 4 10 0x000000 0.6,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
+			html=×,
+			zorder=10001,
+			alpha=0,
+			scale=0.8,
+			handcursor=true,
+			onclick=close_info_popup(),
+			onover=tween(scale|bgcolor, 1.1|0xcc0000, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0xff0000, 0.2)
+		);
+
+		<!-- Contenu texte Classe C -->
+		set(popup_content, '<b style="font-size:30px; color:#00adef; line-height:1.4;">Classe C</b>[br][br]<span style="font-size:20px; line-height:2;">Découvrez un nouveau type de luxe[br][br]Le confort commence là où vous vous sentez en sécurité.</span>');
+
+		copy(layer[info_popup].html, popup_content);
+
+		<!-- Bouton Découvrir -->
+		addlayer(contact_button);
+		set(layer[contact_button],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			vcenter=true,
+			y=150,
+			width=240,
+			height=60,
+			bgcolor=0x00adef,
+			bgalpha=1.0,
+			bgroundedge=8,
+			bgshadow=0 4 10 0x000000 0.6,
+			textalign=center,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
+			html=Découvrir la Classe C,
+			zorder=10002,
+			alpha=0,
+			scale=0.8,
+			handcursor=true,
+			onclick=js(window.open('https://www.mercedes-benz-rci.com/fr/range/classe-c', '_blank');),
+			onover=tween(scale|bgcolor, 1.05|0x0090cf, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0x00adef, 0.2)
+		);
+
+		<!-- Animations d'apparition -->
+		tween(layer[info_popup_bg].bgalpha, 0.4, 0.3, easeOutQuad);
+		tween(layer[info_popup].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[info_popup].scale, 1.0, 0.4, easeOutBack);
+		tween(layer[close_button].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[close_button].scale, 1.0, 0.4, easeOutBack);
+		tween(layer[contact_button].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[contact_button].scale, 1.0, 0.4, easeOutBack);
+	</action>
+
+	<!-- Action pour afficher la popup Classe E -->
+	<action name="show_classe_e_info">
+		<!-- Fermer la popup si elle existe déjà -->
+		if(layer[info_popup], removelayer(info_popup); );
+		if(layer[info_popup_bg], removelayer(info_popup_bg); );
+		if(layer[close_button], removelayer(close_button); );
+		if(layer[contact_button], removelayer(contact_button); );
+
+		<!-- Créer un fond semi-transparent -->
+		addlayer(info_popup_bg);
+		set(layer[info_popup_bg],
+			type=container,
+			align=lefttop,
+			width=100%,
+			height=100%,
+			zorder=9999,
+			bgcolor=0x000000,
+			bgalpha=0,
+			bgcapture=true,
+			onclick=close_info_popup()
+		);
+
+		<!-- Créer la popup -->
+		addlayer(info_popup);
+		set(layer[info_popup],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			width=500,
+			height=auto,
+			bgcolor=0x1a1a1a,
+			bgalpha=0.95,
+			bgroundedge=12,
+			bgborder=2 0x00adef 1.0,
+			bgshadow=0 8 24 0x000000 0.8,
+			padding=30,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:20px; line-height:2;,
+			zorder=10000,
+			alpha=0,
+			scale=0.8
+		);
+
+		<!-- Bouton fermer (croix blanche sur fond rouge) -->
+		addlayer(close_button);
+		set(layer[close_button],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			x=250,
+			y=-200,
+			width=40,
+			height=40,
+			bgcolor=0xff0000,
+			bgalpha=1.0,
+			bgroundedge=20,
+			bgshadow=0 4 10 0x000000 0.6,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
+			html=×,
+			zorder=10001,
+			alpha=0,
+			scale=0.8,
+			handcursor=true,
+			onclick=close_info_popup(),
+			onover=tween(scale|bgcolor, 1.1|0xcc0000, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0xff0000, 0.2)
+		);
+
+		<!-- Contenu texte Classe E -->
+		set(popup_content, '<b style="font-size:30px; color:#00adef; line-height:1.4;">Classe E</b>[br][br]<span style="font-size:20px; line-height:2;">Un caractère plus dynamique[br][br]Elle est prête à relever avec brio tous les défis. Découvrez les qualités exemplaires de la Classe E. Plus dynamique, plus élégante et plus luxueuse que jamais.</span>');
+
+		copy(layer[info_popup].html, popup_content);
+
+		<!-- Bouton Découvrir -->
+		addlayer(contact_button);
+		set(layer[contact_button],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			vcenter=true,
+			y=150,
+			width=240,
+			height=60,
+			bgcolor=0x00adef,
+			bgalpha=1.0,
+			bgroundedge=8,
+			bgshadow=0 4 10 0x000000 0.6,
+			textalign=center,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
+			html=Découvrir la Classe E,
+			zorder=10002,
+			alpha=0,
+			scale=0.8,
+			handcursor=true,
+			onclick=js(window.open('https://www.mercedes-benz-rci.com/fr/range/classe-e', '_blank');),
+			onover=tween(scale|bgcolor, 1.05|0x0090cf, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0x00adef, 0.2)
+		);
+
+		<!-- Animations d'apparition -->
+		tween(layer[info_popup_bg].bgalpha, 0.4, 0.3, easeOutQuad);
+		tween(layer[info_popup].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[info_popup].scale, 1.0, 0.4, easeOutBack);
+		tween(layer[close_button].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[close_button].scale, 1.0, 0.4, easeOutBack);
+		tween(layer[contact_button].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[contact_button].scale, 1.0, 0.4, easeOutBack);
+	</action>
+
+	<!-- Action pour afficher la popup GLE Coupé -->
+	<action name="show_gle_coupe_info">
+		<!-- Fermer la popup si elle existe déjà -->
+		if(layer[info_popup], removelayer(info_popup); );
+		if(layer[info_popup_bg], removelayer(info_popup_bg); );
+		if(layer[close_button], removelayer(close_button); );
+		if(layer[contact_button], removelayer(contact_button); );
+
+		<!-- Créer un fond semi-transparent -->
+		addlayer(info_popup_bg);
+		set(layer[info_popup_bg],
+			type=container,
+			align=lefttop,
+			width=100%,
+			height=100%,
+			zorder=9999,
+			bgcolor=0x000000,
+			bgalpha=0,
+			bgcapture=true,
+			onclick=close_info_popup()
+		);
+
+		<!-- Créer la popup -->
+		addlayer(info_popup);
+		set(layer[info_popup],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			width=500,
+			height=auto,
+			bgcolor=0x1a1a1a,
+			bgalpha=0.95,
+			bgroundedge=12,
+			bgborder=2 0x00adef 1.0,
+			bgshadow=0 8 24 0x000000 0.8,
+			padding=30,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:20px; line-height:2;,
+			zorder=10000,
+			alpha=0,
+			scale=0.8
+		);
+
+		<!-- Bouton fermer (croix blanche sur fond rouge) -->
+		addlayer(close_button);
+		set(layer[close_button],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			x=250,
+			y=-200,
+			width=40,
+			height=40,
+			bgcolor=0xff0000,
+			bgalpha=1.0,
+			bgroundedge=20,
+			bgshadow=0 4 10 0x000000 0.6,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
+			html=×,
+			zorder=10001,
+			alpha=0,
+			scale=0.8,
+			handcursor=true,
+			onclick=close_info_popup(),
+			onover=tween(scale|bgcolor, 1.1|0xcc0000, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0xff0000, 0.2)
+		);
+
+		<!-- Contenu texte GLE Coupé -->
+		set(popup_content, '<b style="font-size:30px; color:#00adef; line-height:1.4;">GLE Coupé</b>[br][br]<span style="font-size:20px; line-height:2;">Personnalités charismatiques[br][br]Le GLE Coupé attire immédiatement tous les regards. Avec un design fascinant, plus sportif et raffiné que jamais.</span>');
+
+		copy(layer[info_popup].html, popup_content);
+
+		<!-- Bouton Découvrir -->
+		addlayer(contact_button);
+		set(layer[contact_button],
+			type=text,
+			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			vcenter=true,
+			y=150,
+			width=240,
+			height=60,
+			bgcolor=0x00adef,
+			bgalpha=1.0,
+			bgroundedge=8,
+			bgshadow=0 4 10 0x000000 0.6,
+			textalign=center,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
+			html=Découvrir le GLE Coupé,
+			zorder=10002,
+			alpha=0,
+			scale=0.8,
+			handcursor=true,
+			onclick=js(window.open('https://www.mercedes-benz-rci.com/fr/range/gle-coupe', '_blank');),
+			onover=tween(scale|bgcolor, 1.05|0x0090cf, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0x00adef, 0.2)
+		);
+
+		<!-- Animations d'apparition -->
+		tween(layer[info_popup_bg].bgalpha, 0.4, 0.3, easeOutQuad);
+		tween(layer[info_popup].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[info_popup].scale, 1.0, 0.4, easeOutBack);
+		tween(layer[close_button].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[close_button].scale, 1.0, 0.4, easeOutBack);
+		tween(layer[contact_button].alpha, 1.0, 0.4, easeOutQuad);
+		tween(layer[contact_button].scale, 1.0, 0.4, easeOutBack);
+	</action>
+
 	<!-- Action pour maintenir le titre constant -->
 	<action name="set_page_title">
 		js(document.title = 'Mercedes Benz by CFAO - Visite virtuelle');
@@ -690,7 +1023,7 @@
 		</image>
 
 		<hotspot name="spot1834233581" style="skin_hotspotstyle" ath="105.261" atv="24.056" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="-18.9,1.78,120.0" linkedscene_spot="spot1834233207" linkedscene_hoffset="32.73" use3dtransition="true" />
-		<hotspot name="spot1834234814" style="skin_hotspotstyle" ath="87.947" atv="20.274" depth="1000.0" linkedscene="scene_09_2_denoiseai_standard" linkedscene_lookat="-21.58,14.44,120.0" linkedscene_spot="spot1834234565" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot1834234814" style="skin_hotspotstyle" ath="84.06" atv="19.256" depth="1000.0" linkedscene="scene_30_denoiseai_standard" linkedscene_lookat="-21.58,14.44,120.0" linkedscene_spot="spot1834234565" linkedscene_hoffset="0.0" use3dtransition="true" />
 		<hotspot name="spot1834234886"
 		         style="interior_hotspotstyle"
 		         ath="-4.506"
@@ -796,8 +1129,8 @@
 		<!-- Hotspot pour entrer dans la voiture GLC 200 -->
 		<hotspot name="spot1834237660"
 		         style="interior_hotspotstyle"
-		         ath="-4.257"
-		         atv="6.869"
+		         ath="5.361"
+		         atv="-12.599"
 		         depth="1000.0"
 		         linkedscene="scene_13_interieur"
 		         linkedscene_lookat="0.0,0.0,120.0"
@@ -811,8 +1144,8 @@
 		<hotspot name="info_glc_200_scene13"
 		         style="info_text_button"
 		         text="i"
-		         ath="-15"
-		         atv="-5"
+		         ath="-15.0"
+		         atv="-5.0"
 		         onclick="show_glc_200_info();"
 		         tooltip="GLC 200"
 		         />
@@ -944,7 +1277,7 @@
 		</image>
 
 		<hotspot name="spot1834241171" style="skin_hotspotstyle" ath="270.203" atv="38.084" depth="1000.0" linkedscene="scene_18_denoiseai_standard" linkedscene_lookat="132.06,12.38,120.0" linkedscene_spot="spot1834240965" linkedscene_hoffset="0.0" use3dtransition="true" />
-		<hotspot name="spot1834241278" style="skin_hotspotstyle" ath="-175.735" atv="17.815" depth="1000.0" linkedscene="scene_13_interieur" linkedscene_lookat="-175.7,-5.42,120.0" linkedscene_spot="spot1834241500" linkedscene_hoffset="324.93" use3dtransition="true" />
+		<hotspot name="spot1834241278" style="interior_hotspotstyle" ath="178.407" atv="-19.053" depth="1000.0" linkedscene="scene_13_interieur" linkedscene_lookat="-175.7,-5.42,120.0" linkedscene_spot="spot1834241500" linkedscene_hoffset="324.93" use3dtransition="true" />
 		<hotspot name="spot1834241562" style="skin_hotspotstyle" ath="89.331" atv="21.008" depth="1000.0" linkedscene="scene_20_denoiseai_standard" linkedscene_lookat="98.97,10.46,120.0" linkedscene_spot="spot1834241854" linkedscene_hoffset="360.0" use3dtransition="true" />
 
 	</scene>
@@ -977,6 +1310,7 @@
 
 		<hotspot name="spot1834241854" style="skin_hotspotstyle" ath="269.331" atv="21.008" depth="1000.0" linkedscene="scene_19_2_denoiseai_standard" linkedscene_lookat="98.97,10.46,120.0" linkedscene_spot="spot1834241562" linkedscene_hoffset="0.0" use3dtransition="true" />
 		<hotspot name="spot1834241897" style="skin_hotspotstyle" ath="142.329" atv="30.765" depth="1000.0" linkedscene="scene_11_21_denoiseai_standard" linkedscene_spot="spot1834242064" linkedscene_hoffset="360.0" use3dtransition="true" />
+		<hotspot name="spot1835089327" style="skin_hotspotstyle" ath="88.265" atv="14.79" depth="1000.0" linkedscene="scene_22_denoiseai_standard" linkedscene_lookat="97.2,-10.26,120.0" />
 
 	</scene>
 
@@ -1008,6 +1342,7 @@
 
 		<hotspot name="spot1834243286" style="skin_hotspotstyle" ath="-145.227" atv="26.292" depth="1000.0" linkedscene="scene_11_21_denoiseai_standard" linkedscene_lookat="71.77,4.54,120.0" linkedscene_spot="spot1834242873" linkedscene_hoffset="370.66" use3dtransition="true" />
 		<hotspot name="spot1834244326" style="skin_hotspotstyle" ath="78.731" atv="23.002" depth="1000.0" linkedscene="scene_23_denoiseai_standard" linkedscene_lookat="104.61,6.78,120.0" linkedscene_spot="spot1834244503" linkedscene_hoffset="360.0" use3dtransition="true" />
+		<hotspot name="spot1835088725" style="skin_hotspotstyle" ath="-88.359" atv="18.578" depth="1000.0" linkedscene="scene_19_2_denoiseai_standard" linkedscene_lookat="-126.81,5.99,120.0" />
 
 	</scene>
 
@@ -1024,7 +1359,7 @@
 		</image>
 
 		<hotspot name="spot1834244503" style="skin_hotspotstyle" ath="258.731" atv="23.002" depth="1000.0" linkedscene="scene_22_denoiseai_standard" linkedscene_lookat="104.61,6.78,120.0" linkedscene_spot="spot1834244326" linkedscene_hoffset="0.0" use3dtransition="true" />
-		<hotspot name="spot1834244661" style="skin_hotspotstyle" ath="141.446" atv="10.465" depth="1000.0" linkedscene="scene_10_interieur" linkedscene_lookat="74.13,-2.22,120.0" linkedscene_spot="spot1834244975" linkedscene_hoffset="-37.7" use3dtransition="true" />
+		<hotspot name="spot1834244661" style="interior_hotspotstyle" ath="150.651" atv="-16.121" depth="1000.0" linkedscene="scene_10_interieur" linkedscene_lookat="74.13,-2.22,120.0" linkedscene_spot="spot1834244975" linkedscene_hoffset="-37.7" use3dtransition="true" />
 		<hotspot name="spot1834245060" style="skin_hotspotstyle" ath="85.808" atv="15.05" depth="1000.0" linkedscene="scene_24_denoiseai_standard" linkedscene_lookat="96.86,0.47,120.0" linkedscene_spot="spot1834245320" linkedscene_hoffset="-2.71" use3dtransition="true" />
 
 	</scene>
@@ -1238,7 +1573,8 @@
 		</image>
 
 		<hotspot name="spot1834246717" style="skin_hotspotstyle" ath="-49.228" atv="23.263" depth="1000.0" linkedscene="scene_25_denoiseai_standard" linkedscene_lookat="-187.62,1.72,120.0" linkedscene_spot="spot1834246087" linkedscene_hoffset="389.44" use3dtransition="true" />
-		<hotspot name="spot1834246948" style="skin_hotspotstyle" ath="147.409" atv="30.082" depth="1000.0" linkedscene="scene_28_denoiseai_standard" linkedscene_lookat="177.68,2.48,120.0" linkedscene_spot="spot1834247181" linkedscene_hoffset="360.0" use3dtransition="true" />
+		<hotspot name="spot1834246948" style="skin_hotspotstyle" ath="108.918" atv="22.094" depth="1000.0" linkedscene="scene_28_denoiseai_standard" linkedscene_lookat="177.68,2.48,120.0" linkedscene_spot="spot1834247181" linkedscene_hoffset="360.0" use3dtransition="true" />
+		<hotspot name="spot1835092822" style="skin_hotspotstyle" ath="-131.37" atv="24.588" depth="1000.0" linkedscene="scene_09_2_denoiseai_standard" linkedscene_lookat="-78.14,1.86,120.0" />
 
 	</scene>
 
@@ -1292,7 +1628,7 @@
 			<cube url="panos/30_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
-		<hotspot name="spot1834247544" style="skin_hotspotstyle" ath="270.093" atv="17.407" depth="1000.0" linkedscene="scene_28_denoiseai_standard" linkedscene_lookat="94.06,4.7,120.0" linkedscene_spot="spot1834247281" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot1834247544" style="skin_hotspotstyle" ath="-89.907" atv="17.407" depth="1000.0" linkedscene="scene_27_denoiseai_standard" linkedscene_lookat="-89.74,4.03,120.68" linkedscene_spot="spot1834247281" linkedscene_hoffset="0.0" use3dtransition="true" />
 		<hotspot name="spot1834247824" style="skin_hotspotstyle" ath="15.361" atv="18.151" depth="1000.0" linkedscene="scene_30a_denoiseai_standard" linkedscene_lookat="-1.06,-0.18,120.0" linkedscene_spot="spot1834248010" linkedscene_hoffset="-0.34" use3dtransition="true" />
 		<hotspot name="spot1834254485" style="skin_hotspotstyle" ath="108.801" atv="27.168" depth="1000.0" linkedscene="scene_32_denoiseai_standard" linkedscene_lookat="0.33,11.78,120.0" linkedscene_spot="spot1834253733" linkedscene_hoffset="6.0" use3dtransition="true" />
 
@@ -1329,7 +1665,7 @@
 		</image>
 
 		<hotspot name="spot1834248253" style="skin_hotspotstyle" ath="-160.138" atv="25.677" depth="1000.0" linkedscene="scene_30a_denoiseai_standard" linkedscene_lookat="-3.57,1.24,120.08" linkedscene_spot="spot1834248084" linkedscene_hoffset="365.09" use3dtransition="true" />
-		<hotspot name="spot1834248338" style="skin_hotspotstyle" ath="86.493" atv="6.223" depth="1000.0" linkedscene="scene_32bd_interieur" linkedscene_spot="spot1834249148" linkedscene_hoffset="181.62" use3dtransition="true" />
+		<hotspot name="spot1834248338" style="interior_hotspotstyle" ath="86.493" atv="6.223" depth="1000.0" linkedscene="scene_32bd_interieur" linkedscene_spot="spot1834249148" linkedscene_hoffset="181.62" use3dtransition="true" />
 		<hotspot name="spot1834249418" style="skin_hotspotstyle" ath="35.062" atv="17.036" depth="1000.0" linkedscene="scene_26g_denoiseai_standard" linkedscene_lookat="32.72,6.2,120.0" linkedscene_spot="spot1834249636" linkedscene_hoffset="360.0" use3dtransition="true" />
 
 	</scene>
@@ -1368,7 +1704,26 @@
 		<hotspot name="spot1834251361" style="skin_hotspotstyle" ath="28.525" atv="12.279" depth="1000.0" linkedscene="scene_32b_denoiseai_standard" linkedscene_lookat="20.92,10.39,117.54" linkedscene_spot="spot1834251652" linkedscene_hoffset="-9.82" use3dtransition="true" />
 		<hotspot name="spot1834253733" style="skin_hotspotstyle" ath="-65.201" atv="16.168" depth="1000.0" linkedscene="scene_30_denoiseai_standard" linkedscene_lookat="0.33,11.78,120.0" linkedscene_spot="spot1834254485" linkedscene_hoffset="354.0" use3dtransition="true" />
 		<hotspot name="spot1834254747" style="skin_hotspotstyle" ath="93.074" atv="23.426" depth="1000.0" linkedscene="scene_33_denoiseai_standard" linkedscene_lookat="86.04,9.31,120.0" linkedscene_spot="spot1834255008" linkedscene_hoffset="-0.8" use3dtransition="true" />
-		
+
+		<!-- Hotspots d'information Classe C et Classe E -->
+		<hotspot name="info_classe_c_32"
+		         style="info_text_button"
+		         text="i"
+		         ath="-17.515"
+		         atv="2.494"
+		         onclick="show_classe_c_info();"
+		         tooltip="Classe C"
+		         />
+
+		<hotspot name="info_classe_e_32"
+		         style="info_text_button"
+		         text="i"
+		         ath="32.877"
+		         atv="3.101"
+		         onclick="show_classe_e_info();"
+		         tooltip="Classe E"
+		         />
+
 
 	</scene>
 
@@ -1398,9 +1753,9 @@
 			<cube url="panos/32b_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
-		<hotspot name="spot1834251652" style="skin_hotspotstyle" ath="-161.29" atv="30.689" depth="1000.0" linkedscene="scene_32_denoiseai_standard" linkedscene_lookat="20.92,10.39,117.54" linkedscene_spot="spot1834251361" linkedscene_hoffset="369.82" use3dtransition="true" />
-		<hotspot name="spot1834251712" style="skin_hotspotstyle" ath="-35.655" atv="8.22" depth="1000.0" linkedscene="scene_32bd_interieur" linkedscene_lookat="98.21,-0.98,119.53" linkedscene_spot="spot1834252071" linkedscene_hoffset="151.25" use3dtransition="true" />
-		<hotspot name="spot1834252385" style="skin_hotspotstyle" ath="39.934" atv="12.001" depth="1000.0" linkedscene="scene_32g_inteireur" linkedscene_lookat="99.87,11.12,120.0" linkedscene_spot="spot1834252615" linkedscene_hoffset="39.28" use3dtransition="true" />
+		<hotspot name="spot1834251652" style="skin_hotspotstyle" ath="-140.739" atv="27.019" depth="1000.0" linkedscene="scene_32_denoiseai_standard" linkedscene_lookat="20.92,10.39,117.54" linkedscene_spot="spot1834251361" linkedscene_hoffset="369.82" use3dtransition="true" />
+		<hotspot name="spot1834251712" style="interior_hotspotstyle" ath="-39.454" atv="-8.459" depth="1000.0" linkedscene="scene_32bd_interieur" linkedscene_lookat="98.21,-0.98,119.53" linkedscene_spot="spot1834252071" linkedscene_hoffset="151.25" use3dtransition="true" />
+		<hotspot name="spot1834252385" style="interior_hotspotstyle" ath="50.371" atv="-6.466" depth="1000.0" linkedscene="scene_32g_inteireur" linkedscene_lookat="99.87,11.12,120.0" linkedscene_spot="spot1834252615" linkedscene_hoffset="39.28" use3dtransition="true" />
 		<hotspot name="spot1834252712" style="skin_hotspotstyle" ath="12.528" atv="21.61" depth="1000.0" linkedscene="scene_32c_denoiseai_standard" linkedscene_lookat="19.54,0.31,120.0" linkedscene_spot="spot1834252912" linkedscene_hoffset="360.0" use3dtransition="true" />
 
 	</scene>
@@ -1500,7 +1855,7 @@
 		</image>
 
 		<hotspot name="spot1834256398" style="skin_hotspotstyle" ath="357.246" atv="26.546" depth="1000.0" linkedscene="scene_32f_denoiseai_standard" linkedscene_lookat="-147.5,19.14,120.0" linkedscene_spot="spot1834256201" linkedscene_hoffset="0.0" use3dtransition="true" />
-		<hotspot name="spot1834256457" style="skin_hotspotstyle" ath="-58.554" atv="13.943" depth="1000.0" linkedscene="scene_32g_inteireur" linkedscene_lookat="-75.8,-3.19,120.0" linkedscene_spot="spot1834256646" linkedscene_hoffset="359.53" use3dtransition="true" />
+		<hotspot name="spot1834256457" style="interior_hotspotstyle" ath="-58.554" atv="13.943" depth="1000.0" linkedscene="scene_32g_inteireur" linkedscene_lookat="-75.8,-3.19,120.0" linkedscene_spot="spot1834256646" linkedscene_hoffset="359.53" use3dtransition="true" />
 		<hotspot name="spot1834942463" style="skin_hotspotstyle" ath="115.619" atv="12.43" depth="1000.0" linkedscene="scene_37_denoiseai_standard" linkedscene_lookat="110.1,-2.13,120.0" linkedscene_spot="spot1834942820" linkedscene_hoffset="360.0" use3dtransition="true" />
 		<hotspot name="spot1834943358" style="skin_hotspotstyle" ath="-125.191" atv="10.018" depth="1000.0" linkedscene="scene_32b_denoiseai_standard" linkedscene_lookat="-145.2,0.19,120.0" />
 
@@ -1624,8 +1979,18 @@
 			<cube url="panos/39_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
-		<hotspot name="spot1834259972" style="skin_hotspotstyle" ath="283.557" atv="21.289" depth="1000.0" linkedscene="scene_38_denoiseai_standard" linkedscene_lookat="100.94,14.11,120.0" linkedscene_spot="spot1834259746" linkedscene_hoffset="0.0" use3dtransition="true" />
+		<hotspot name="spot1834259972" style="skin_hotspotstyle" ath="-80.233" atv="20.447" depth="1000.0" linkedscene="scene_38_denoiseai_standard" linkedscene_lookat="100.94,14.11,120.0" linkedscene_spot="spot1834259746" linkedscene_hoffset="0.0" use3dtransition="true" />
 		<hotspot name="spot1834260051" style="skin_hotspotstyle" ath="51.063" atv="18.285" depth="1000.0" linkedscene="scene_40_denoiseai_standard" linkedscene_lookat="-4.25,1.09,120.0" linkedscene_spot="spot1834260251" linkedscene_hoffset="35.63" use3dtransition="true" />
+
+		<!-- Hotspot info GLE Coupé -->
+		<hotspot name="info_gle_coupe_scene39"
+		         style="info_text_button"
+		         text="i"
+		         ath="30.36"
+		         atv="-2.776"
+		         onclick="show_gle_coupe_info();"
+		         tooltip="GLE Coupé"
+		         />
 
 	</scene>
 
@@ -1658,7 +2023,7 @@
 			<cube url="panos/41_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
-		<hotspot name="spot1834259593" style="skin_hotspotstyle" ath="-44.72" atv="3.327" depth="1000.0" linkedscene="scene_41_interieur" linkedscene_lookat="95.55,6.32,120.0" linkedscene_spot="spot1834258952" linkedscene_hoffset="149.13" use3dtransition="true" />
+		<hotspot name="spot1834259593" style="interior_hotspotstyle" ath="-41.412" atv="-14.358" depth="1000.0" linkedscene="scene_41_interieur" linkedscene_lookat="95.55,6.32,120.0" linkedscene_spot="spot1834258952" linkedscene_hoffset="149.13" use3dtransition="true" />
 		<hotspot name="spot1834260871" style="skin_hotspotstyle" ath="-159.916" atv="30.284" depth="1000.0" linkedscene="scene_40_denoiseai_standard" linkedscene_lookat="11.94,8.06,120.0" linkedscene_spot="spot1834260697" linkedscene_hoffset="355.21" use3dtransition="true" />
 		<hotspot name="spot1834260933" style="skin_hotspotstyle" ath="5.127" atv="13.757" depth="1000.0" linkedscene="scene_42_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834261087" linkedscene_hoffset="0.59" use3dtransition="true" />
 
@@ -1800,7 +2165,7 @@
 		</image>
 
 		<hotspot name="spot1834258288" style="skin_hotspotstyle" ath="226.599" atv="19.229" depth="1000.0" linkedscene="scene_38_denoiseai_standard" linkedscene_lookat="99.93,-6.15,120.0" linkedscene_spot="spot1834257864" linkedscene_hoffset="0.0" use3dtransition="true" />
-		<hotspot name="spot1834258344" style="skin_hotspotstyle" ath="77.502" atv="3.273" depth="1000.0" linkedscene="scene_41_interieur" linkedscene_spot="spot1834258682" linkedscene_hoffset="178.28" use3dtransition="true" />
+		<hotspot name="spot1834258344" style="interior_hotspotstyle" ath="76.99" atv="-10.324" depth="1000.0" linkedscene="scene_41_interieur" linkedscene_spot="spot1834258682" linkedscene_hoffset="178.28" use3dtransition="true" />
 
 	</scene>
 
