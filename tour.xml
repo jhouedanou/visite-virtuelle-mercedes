@@ -55,7 +55,7 @@
 	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
 	               design_thumbborder_padding="2"
 	               design_thumbborder_bgroundedge="0"
-	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_css="color:#FFFFFF; font-family:'Corporate A BQ', Arial;"
 	               design_text_shadow="1"
 	               />
 
@@ -207,7 +207,7 @@
 			bgborder=2 0x00adef 1.0,
 			bgshadow=0 8 24 0x000000 0.8,
 			padding=30,
-			css=color:#ffffff; font-family:Arial; font-size:15px; line-height:1.6;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:15px; line-height:1.6;,
 			zorder=10000,
 			alpha=0,
 			scale=0.8
@@ -228,7 +228,7 @@
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:Arial; font-size:24px; font-weight:bold; text-align:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center;,
 			html=×,
 			zorder=10001,
 			alpha=0,
@@ -289,7 +289,7 @@
 			bgborder=2 0x00adef 1.0,
 			bgshadow=0 8 24 0x000000 0.8,
 			padding=30,
-			css=color:#ffffff; font-family:Arial; font-size:15px; line-height:1.8;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:15px; line-height:1.8;,
 			zorder=10000,
 			alpha=0,
 			scale=0.8
@@ -310,7 +310,7 @@
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:Arial; font-size:24px; font-weight:bold; text-align:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center;,
 			html=×,
 			zorder=10001,
 			alpha=0,
@@ -340,7 +340,7 @@
 			bgalpha=1.0,
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
 			html=Découvrir le GLC Coupé,
 			zorder=10002,
 			alpha=0,
@@ -398,7 +398,7 @@
 			bgborder=2 0x00adef 1.0,
 			bgshadow=0 8 24 0x000000 0.8,
 			padding=30,
-			css=color:#ffffff; font-family:Arial; font-size:15px; line-height:1.8;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:15px; line-height:1.8;,
 			zorder=10000,
 			alpha=0,
 			scale=0.8
@@ -419,7 +419,7 @@
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:Arial; font-size:24px; font-weight:bold; text-align:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center;,
 			html=×,
 			zorder=10001,
 			alpha=0,
@@ -449,7 +449,7 @@
 			bgalpha=1.0,
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
 			html=Contactez-nous,
 			zorder=10002,
 			alpha=0,
@@ -614,10 +614,10 @@
 			<cube url="panos/09_2_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
-		<hotspot name="spot1834233581" style="skin_hotspotstyle" ath="134.741" atv="34.267" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="-14.58,1.78,120.0" linkedscene_spot="spot1834233207" linkedscene_hoffset="24.83" use3dtransition="true" />
+		<hotspot name="spot1834233581" style="skin_hotspotstyle" ath="134.741" atv="34.267" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="-14.58,1.78,120.0" linkedscene_spot="spot1834233207" linkedscene_hoffset="24.83" use3dtransition="true" /> 
 
 		<hotspot name="spot1834234565" style="skin_hotspotstyle" ath="-92.113" atv="20.265" depth="1000.0" linkedscene="scene_10_denoiseai_standard" linkedscene_lookat="-21.58,14.44,120.0" linkedscene_spot="spot1834234814" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1834305405" style="skin_hotspotstyle" ath="24.709" atv="17.872" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="30.58,-2.2,120.27" linkedscene_spot="spot1834305140" linkedscene_hoffset="180.0" use3dtransition="true" />
+		<!-- <hotspot name="spot1834305405" style="skin_hotspotstyle" ath="24.709" atv="17.872" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="30.58,-2.2,120.27" linkedscene_spot="spot1834305140" linkedscene_hoffset="180.0" use3dtransition="true" /> -->
 
 		<!-- Hotspot info GLC Coupé -->
 		<hotspot name="info_glc_coupe_scene09"
