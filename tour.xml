@@ -648,8 +648,8 @@
 		<hotspot name="info_glc_coupe_scene09"
 		         style="info_text_button"
 		         text="i"
-		         ath="0"
-		         atv="0"
+		         ath="-29.015"
+		         atv="-0.425"
 		         onclick="show_glc_coupe_info();"
 		         tooltip="GLC Coupé"
 		         />
@@ -844,7 +844,7 @@
 		</image>
 
 		<hotspot name="spot1834238204" style="skin_hotspotstyle" ath="90.019" atv="20.989" depth="1000.0" linkedscene="scene_13_denoiseai_standard" linkedscene_lookat="49.6,1.04,120.0" linkedscene_spot="spot1834237958" linkedscene_hoffset="20.66" use3dtransition="true" />
-		<hotspot name="spot1834239167" style="skin_hotspotstyle" ath="4.615" atv="26.445" depth="1000.0" linkedscene="scene_16_denoiseai_standard" linkedscene_lookat="52.13,2.02,119.72" linkedscene_spot="spot1834239417" linkedscene_hoffset="313.44" use3dtransition="true" />
+		<hotspot name="spot1834239167" style="skin_hotspotstyle" ath="4.615" atv="26.445" depth="1000.0" linkedscene="scene_16_denoiseai_standard" linkedscene_lookat="27.04,-8.25,119.72" linkedscene_spot="spot1834239417" linkedscene_hoffset="313.44" use3dtransition="true" />
 
 	</scene>
 
@@ -860,15 +860,15 @@
 			<cube url="panos/16_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
-		<hotspot name="spot1834239417" style="skin_hotspotstyle" ath="138.052" atv="21.327" depth="1000.0" linkedscene="scene_15_denoiseai_standard" linkedscene_lookat="52.13,2.02,119.72" linkedscene_spot="spot1834239167" linkedscene_hoffset="46.56" use3dtransition="true" />
-		<hotspot name="spot1834239802" style="skin_hotspotstyle" ath="31.271" atv="32.18" depth="1000.0" linkedscene="scene_17_denoiseai_standard" linkedscene_lookat="106.72,9.39,120.0" linkedscene_spot="spot1834240411" linkedscene_hoffset="-13.41" use3dtransition="true" />
+		<hotspot name="spot1834239417" style="skin_hotspotstyle" ath="138.052" atv="21.327" depth="1000.0" linkedscene="scene_15_denoiseai_standard" linkedscene_lookat="27.04,-8.25,119.72" linkedscene_spot="spot1834239167" linkedscene_hoffset="46.56" use3dtransition="true" />
+		<hotspot name="spot1834239802" style="skin_hotspotstyle" ath="31.272" atv="32.192" depth="1000.0" linkedscene="scene_17_denoiseai_standard" linkedscene_lookat="106.72,9.39,120.0" linkedscene_spot="spot1834240411" linkedscene_hoffset="-13.41" use3dtransition="true" />
 
 		<!-- Hotspot info GLC 200 -->
 		<hotspot name="info_glc_200_scene16"
 		         style="info_text_button"
 		         text="i"
-		         ath="130"
-		         atv="-10"
+		         ath="77.523"
+		         atv="13.977"
 		         onclick="show_glc_200_info();"
 		         tooltip="GLC 200"
 		         />
@@ -888,7 +888,7 @@
 		</image>
 
 		<hotspot name="spot1834240411" style="skin_hotspotstyle" ath="-162.143" atv="32.336" depth="1000.0" linkedscene="scene_16_denoiseai_standard" linkedscene_lookat="106.72,9.39,120.0" linkedscene_spot="spot1834239802" linkedscene_hoffset="373.41" use3dtransition="true" />
-		<hotspot name="spot1834240492" style="skin_hotspotstyle" ath="82.791" atv="27.048" depth="1000.0" linkedscene="scene_18_denoiseai_standard" linkedscene_lookat="134.98,0.7,120.0" />
+		<hotspot name="spot1834240492" style="skin_hotspotstyle" ath="82.789" atv="27.159" depth="1000.0" linkedscene="scene_18_denoiseai_standard" linkedscene_lookat="134.98,0.7,120.0" />
 
 	</scene>
 
@@ -906,6 +906,7 @@
 
 		<hotspot name="spot1834240851" style="skin_hotspotstyle" ath="-98.481" atv="31.071" depth="1000.0" linkedscene="scene_17_denoiseai_standard" linkedscene_lookat="134.98,0.7,120.0" linkedscene_spot="spot1834240492" linkedscene_hoffset="361.27" use3dtransition="true" />
 		<hotspot name="spot1834240965" style="skin_hotspotstyle" ath="90.203" atv="38.084" depth="1000.0" linkedscene="scene_19_2_denoiseai_standard" linkedscene_lookat="132.06,12.38,120.0" linkedscene_spot="spot1834241171" linkedscene_hoffset="360.0" use3dtransition="true" />
+		<hotspot name="spot1834897626" style="skin_hotspotstyle" ath="-97.54" atv="31.777" depth="1000.0" linkedscene="scene_17_denoiseai_standard" linkedscene_lookat="134.98,0.7,120.0" linkedscene_spot="spot1834240492" linkedscene_hoffset="360.33" use3dtransition="true" />
 
 	</scene>
 

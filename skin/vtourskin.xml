@@ -55,7 +55,7 @@
 	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
 	               design_thumbborder_padding="2"
 	               design_thumbborder_bgroundedge="0"
-	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_css="color:#FFFFFF; font-family:'Corporate A BQ', Arial;"
 	               design_text_txtshadow="1 1 4 0x000000 1.0"
 	               />
 
@@ -281,16 +281,10 @@
 	       onclick="skin_hotspotstyle_click();"
 	       depth="1000"
 	       scale="0.5"
-	       onover.addevent="tween(scale,0.55);"
-	       onout.addevent="tween(scale,0.5);"
-	       onloaded.addevent="skin_hotspotstyle_setup();"
+	       onloaded.addevent=""
 	       />
 
 	<action name="skin_hotspotstyle_setup" scope="local">
-		if(isvalue(caller.linkedscene) AND skin_settings.tooltips_hotspots,
-			copy(caller.tooltip, scene[get(caller.linkedscene)].title);
-			caller.loadstyle(skin_tooltips);
-		);
 	</action>
 
 	<action name="skin_hotspotstyle_click" scope="local">
@@ -356,7 +350,7 @@
 	       align="lefttop" edge="bottom" oy="-2" width="200"
 	       bgalpha="0.0"
 	       txtshadow="get:skin_settings.design_text_txtshadow"
-	       css="calc:skin_settings.design_text_css + ' text-align:center; font-size:16px;'"
+	       css="color:#FFFFFF; font-family:'Corporate A BQ', Arial; text-align:center; font-size:16px;"
 	       html=""
 	       />
 
