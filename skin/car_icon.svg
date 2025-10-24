@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icône de voiture SUV simplifiée - blanc -->
+  <g fill="#FFFFFF" stroke="none">
+    <!-- Carrosserie principale -->
+    <path d="M 20 55 L 25 45 L 35 35 L 65 35 L 75 45 L 80 55 L 80 70 L 75 75 L 25 75 L 20 70 Z"/>
+
+    <!-- Fenêtres -->
+    <path d="M 30 40 L 35 38 L 45 38 L 48 40 L 48 50 L 30 50 Z" fill="#000000" opacity="0.3"/>
+    <path d="M 52 40 L 55 38 L 65 38 L 70 40 L 70 50 L 52 50 Z" fill="#000000" opacity="0.3"/>
+
+    <!-- Roues -->
+    <circle cx="30" cy="75" r="8" fill="#FFFFFF"/>
+    <circle cx="30" cy="75" r="5" fill="#333333"/>
+    <circle cx="70" cy="75" r="8" fill="#FFFFFF"/>
+    <circle cx="70" cy="75" r="5" fill="#333333"/>
+
+    <!-- Détails -->
+    <rect x="45" y="55" width="10" height="3" fill="#FFFFFF" opacity="0.6"/>
+    <path d="M 25 60 L 75 60" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+  </g>
+</svg>

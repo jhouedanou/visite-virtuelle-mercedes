@@ -1,0 +1,179 @@
+<!-- ========================================= -->
+<!-- POPUP SIMPLE AVEC HOTSPOT QUI SUIT LE PANO -->
+<!-- ========================================= -->
+
+<!-- STYLE POUR LE HOTSPOT BOUTON (qui suit le pano) -->
+<style name="info_button"
+       type="text"
+       renderer="webgl"
+       css="color:#FFFFFF; font-size:18px; font-weight:bold; text-align:center;"
+       textalign="center"
+       width="60" height="60"
+       bgroundedge="100"
+       bgcolor="0x00adef"
+       bgalpha="0.9"
+       bgborder="2 0xFFFFFF 1.0"
+       bgshadow="0 4 10 0x000000 0.6"
+       txtshadow="0 0 2 0x000000 1.0"
+       oversampling="2"
+       mipmapping="true"
+       zoom="true"
+       distorted="true"
+       capture="true"
+       onover="tween(scale, 1.2, 0.2, easeOutBack);"
+       onout="tween(scale, 1.0, 0.2, easeInOutQuad);"
+       />
+
+
+<!-- ACTION POUR AFFICHER LA POPUP -->
+<action name="show_info_popup">
+	<!-- Fermer la popup si elle existe déjà -->
+	if(layer[info_popup], removelayer(info_popup); );
+	if(layer[info_popup_bg], removelayer(info_popup_bg); );
+
+	<!-- Créer un fond semi-transparent -->
+	addlayer(info_popup_bg);
+	set(layer[info_popup_bg],
+		type=container,
+		align=lefttop,
+		width=100%,
+		height=100%,
+		zorder=9999,
+		bgcolor=0x000000,
+		bgalpha=0,
+		bgcapture=true,
+		onclick=close_info_popup()
+	);
+
+	<!-- Créer la popup -->
+	addlayer(info_popup);
+	set(layer[info_popup],
+		type=text,
+		parent=info_popup_bg,
+		align=center,
+		edge=center,
+		width=400,
+		height=auto,
+		bgcolor=0x1a1a1a,
+		bgalpha=0.95,
+		bgroundedge=12,
+		bgborder=2 0x00adef 1.0,
+		bgshadow=0 8 24 0x000000 0.8,
+		padding=30,
+		css=color:#ffffff; font-family:Arial; font-size:15px; line-height:1.6;,
+		zorder=10000,
+		alpha=0,
+		scale=0.8
+	);
+
+	<!-- Contenu HTML de la popup -->
+	set(popup_content, '');
+	txtadd(popup_content, '<div style="text-align:center;">');
+	txtadd(popup_content, '<h2 style="color:#00adef; margin:0 0 20px 0; font-size:26px; text-transform:uppercase; letter-spacing:2px;">Mercedes-Benz</h2>');
+	txtadd(popup_content, '<p style="margin:0 0 15px 0; text-align:justify;">Découvrez l''excellence automobile allemande. Innovation, luxe et performance réunis dans chaque détail.</p>');
+	txtadd(popup_content, '<p style="margin:0 0 25px 0; text-align:justify;">Notre gamme exclusive combine design raffiné et technologies de pointe pour une expérience de conduite incomparable.</p>');
+	txtadd(popup_content, '<div onclick="krpano.call(''close_info_popup()'');" ');
+	txtadd(popup_content, 'style="display:inline-block; background:#00adef; color:#fff; padding:14px 35px; border-radius:6px; font-weight:bold; cursor:pointer; box-shadow:0 4 12px rgba(0,173,239,0.4); transition:all 0.3s; text-transform:uppercase; letter-spacing:1px; font-size:13px;">');
+	txtadd(popup_content, 'FERMER');
+	txtadd(popup_content, '</div>');
+	txtadd(popup_content, '</div>');
+
+	copy(layer[info_popup].html, popup_content);
+
+	<!-- Animations d'apparition -->
+	tween(layer[info_popup_bg].bgalpha, 0.4, 0.3, easeOutQuad);
+	tween(layer[info_popup].alpha, 1.0, 0.4, easeOutQuad);
+	tween(layer[info_popup].scale, 1.0, 0.4, easeOutBack);
+</action>
+
+
+<!-- ACTION POUR FERMER LA POPUP -->
+<action name="close_info_popup">
+	if(layer[info_popup],
+		tween(layer[info_popup_bg].bgalpha, 0.0, 0.25, easeInQuad);
+		tween(layer[info_popup].alpha, 0.0, 0.25, easeInQuad);
+		tween(layer[info_popup].scale, 0.8, 0.25, easeInBack,
+			removelayer(info_popup_bg);
+			removelayer(info_popup);
+		);
+	);
+</action>
+
+
+<!-- ========================================= -->
+<!-- EXEMPLES DE HOTSPOTS                     -->
+<!-- ========================================= -->
+
+<!-- Hotspot 1: Bouton avec texte "i" qui suit le pano -->
+<hotspot name="info_spot_1"
+         style="info_button"
+         text="i"
+         ath="0"
+         atv="0"
+         onclick="show_info_popup();"
+         tooltip="Cliquez pour plus d'informations"
+         />
+
+<!-- Hotspot 2: Bouton avec icône qui suit le pano -->
+<hotspot name="info_spot_2"
+         style="info"
+         ath="90"
+         atv="10"
+         onclick="show_info_popup();"
+         tooltip="Informations Mercedes"
+         />
+
+<!-- Hotspot 3: Bouton texte personnalisé -->
+<hotspot name="info_spot_3"
+         style="info_button"
+         text="INFO"
+         width="100"
+         height="40"
+         bgroundedge="20"
+         ath="-90"
+         atv="-5"
+         onclick="show_info_popup();"
+         />
+
+
+<!-- ========================================= -->
+<!-- NOTES ET PERSONNALISATION                -->
+<!-- ========================================= -->
+
+<!--
+AVANTAGES DE CETTE SOLUTION:
+✓ Simple et légère
+✓ Hotspot qui suit le panorama (ath/atv)
+✓ Animations fluides (scale + fade)
+✓ Responsive
+✓ Facile à personnaliser
+
+PARAMÈTRES DU HOTSPOT:
+- ath: Angle horizontal (0-360°)
+  * 0° = Face avant
+  * 90° = Droite
+  * 180° = Arrière
+  * 270° = Gauche
+
+- atv: Angle vertical (-90 à +90°)
+  * 0° = Horizon
+  * +90° = Zénith (haut)
+  * -90° = Nadir (bas)
+
+PERSONNALISATION:
+1. Couleur principale: 0x00adef (changez cette valeur)
+2. Taille popup: width=400 (ajustez selon besoin)
+3. Texte du bouton: text="i" (changez le texte)
+4. Contenu: Modifiez le HTML dans popup_content
+
+EXEMPLE D'UTILISATION DANS UNE SCÈNE:
+<scene name="scene_01" ...>
+	<hotspot name="info_voiture"
+	         style="info_button"
+	         text="i"
+	         ath="45"
+	         atv="5"
+	         onclick="show_info_popup();"
+	         />
+</scene>
+-->

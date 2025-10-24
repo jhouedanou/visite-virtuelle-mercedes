@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icône de porte de voiture - blanc -->
+  <g fill="#FFFFFF" stroke="none">
+    <!-- Cadre de porte -->
+    <path d="M 30 20 L 70 20 L 70 80 L 30 80 Z" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+
+    <!-- Panneau de porte intérieur -->
+    <rect x="35" y="25" width="30" height="50" fill="#FFFFFF" opacity="0.8"/>
+
+    <!-- Fenêtre de porte -->
+    <rect x="37" y="27" width="26" height="20" fill="#000000" opacity="0.5"/>
+
+    <!-- Poignée de porte -->
+    <ellipse cx="60" cy="52" rx="4" ry="6" fill="#FFFFFF"/>
+    <rect x="56" y="50" width="8" height="4" rx="2" fill="#CCCCCC"/>
+
+    <!-- Détails panneau intérieur -->
+    <rect x="37" y="52" width="18" height="18" fill="#FFFFFF" opacity="0.3" rx="2"/>
+
+    <!-- Lignes de détail -->
+    <line x1="40" y1="72" x2="60" y2="72" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+    <line x1="40" y1="75" x2="60" y2="75" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+
+    <!-- Flèche "entrer" -->
+    <path d="M 75 45 L 85 50 L 75 55 Z" fill="#FFFFFF"/>
+    <line x1="72" y1="50" x2="85" y2="50" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+</svg>

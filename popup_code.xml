@@ -1,0 +1,176 @@
+<!-- ========================================= -->
+<!-- CODE À AJOUTER DANS VOTRE tour.xml       -->
+<!-- ========================================= -->
+
+<!-- 1. STYLES - À placer après le style "info" existant -->
+
+<!-- Style pour hotspot info avancé qui suit le pano -->
+<style name="info_button"
+       type="text"
+       renderer="webgl"
+       css="color:#FFFFFF; font-size:16px; font-weight:bold; text-align:center;"
+       textalign="center"
+       width="80" height="80"
+       bgroundedge="100"
+       bgcolor="0x00adef"
+       bgalpha="0.9"
+       bgborder="2 0xFFFFFF 1.0"
+       bgshadow="0 4 10 0x000000 0.6"
+       txtshadow="0 0 2 0x000000 1.0"
+       oversampling="2"
+       mipmapping="true"
+       zoom="true"
+       distorted="true"
+       capture="true"
+       onover="tween(scale, 1.1, 0.2);"
+       onout="tween(scale, 1.0, 0.2);"
+       />
+
+
+<!-- 2. ACTIONS - Remplacer les actions show_mercedes_info et close_mercedes_popup existantes -->
+
+<!-- Action pour fermer le popup avec effet de fond flou -->
+<action name="close_mercedes_popup">
+	if(layer[popup_bg],
+		set(layer[popup_bg].enabled, false);
+		tween(layer[popup_bg].bgblur, 0.0, 0.25);
+		tween(layer[popup_bg].bgalpha, 0.0, 0.25);
+		tween(layer[mercedes_popup_layer].alpha, 0.0, 0.25, default,
+			removelayer(popup_bg, true);
+		);
+	);
+</action>
+
+<!-- Action pour afficher le popup Mercedes avec fond flou -->
+<action name="show_mercedes_info">
+	<!-- Vérifier si le popup est déjà ouvert -->
+	if(layer[popup_bg], close_mercedes_popup(); break(); );
+
+	<!-- Créer le fond flou qui couvre tout l'écran -->
+	addlayer(popup_bg);
+	set(layer[popup_bg],
+		type=container,
+		align=lefttop,
+		width=100%,
+		height=100%,
+		zorder=999999,
+		handcursor=false,
+		bgcapture=true,
+		capture=false,
+		bgblur=0,
+		bgcolor=0x000000,
+		bgalpha=0.0,
+		onclick=close_mercedes_popup()
+	);
+
+	<!-- Créer le popup principal -->
+	addlayer(mercedes_popup_layer);
+	set(layer[mercedes_popup_layer],
+		type=text,
+		parent=popup_bg,
+		align=center,
+		edge=center,
+		width=450,
+		height=auto,
+		vcenter=true,
+		bgcolor=0x000000,
+		bgalpha=0.85,
+		bgroundedge=10,
+		bgborder=3 0x00adef 1.0,
+		bgshadow=0 10 30 0x000000 0.7,
+		padding=25,
+		css=color:#ffffff; font-family:Arial; font-size:16px; text-align:center; line-height:1.8; pointer-events:auto;,
+		zorder=1000000,
+		enabled=true,
+		handcursor=false,
+		capture=true,
+		bgcapture=true,
+		alpha=0
+	);
+
+	<!-- Construire le HTML -->
+	set(popup_html, '');
+	txtadd(popup_html, '<div style="text-align:center; color:#00adef; font-size:22px; font-weight:bold; margin-bottom:20px;">');
+	txtadd(popup_html, 'Mercedes-Benz');
+	txtadd(popup_html, '</div>');
+	txtadd(popup_html, '<div style="margin-bottom:25px;">');
+	txtadd(popup_html, 'Découvrez ce véhicule d''exception alliant luxe, performance et innovation technologique.');
+	txtadd(popup_html, '</div>');
+	txtadd(popup_html, '<div style="text-align:center;">');
+	txtadd(popup_html, '<div onclick="krpano.call(''close_mercedes_popup()'');" style="display:inline-block; background-color:#00adef; color:#ffffff; padding:12px 30px; border-radius:5px; font-size:14px; font-weight:bold; cursor:pointer; box-shadow:0 2px 8px rgba(0,173,239,0.3); pointer-events:auto;">');
+	txtadd(popup_html, 'Fermer');
+	txtadd(popup_html, '</div>');
+	txtadd(popup_html, '</div>');
+
+	<!-- Afficher le popup -->
+	copy(layer[mercedes_popup_layer].html, popup_html);
+
+	<!-- Animer l'apparition avec effet de flou progressif -->
+	tween(layer[popup_bg].bgblur, 15, 0.3);
+	tween(layer[popup_bg].bgalpha, 0.3, 0.3);
+	delayedcall(0.1, tween(layer[mercedes_popup_layer].alpha, 1.0, 0.3); );
+</action>
+
+
+<!-- 3. EXEMPLES DE HOTSPOTS QUI SUIVENT LE PANO -->
+
+<!-- Exemple 1: Hotspot avec texte qui suit le panorama -->
+<hotspot name="info_spot_1"
+         style="info_button"
+         text="i"
+         ath="0"
+         atv="0"
+         onclick="show_mercedes_info();"
+         />
+
+<!-- Exemple 2: Hotspot avec image qui suit le panorama -->
+<hotspot name="info_spot_2"
+         style="info"
+         ath="90"
+         atv="10"
+         onclick="show_mercedes_info();"
+         />
+
+<!-- ========================================= -->
+<!-- NOTES D'UTILISATION                      -->
+<!-- ========================================= -->
+
+<!--
+POINTS CLÉS DE L'IMPLÉMENTATION:
+
+1. HOTSPOT QUI SUIT LE PANO:
+   - Utiliser ath (angle horizontal) et atv (angle vertical)
+   - Le hotspot sera fixé dans le panorama 360°
+   - renderer="webgl" pour de meilleures performances
+   - distorted="true" pour suivre la déformation sphérique
+
+2. FOND FLOU (bgblur):
+   - Effet de flou progressif sur le fond (0 à 15)
+   - bgalpha contrôle la transparence du fond noir
+   - Créé avec un layer container en plein écran
+
+3. STRUCTURE DES LAYERS:
+   - popup_bg: Container plein écran avec flou
+   - mercedes_popup_layer: Popup enfant du fond
+   - Le clic sur popup_bg ferme le popup
+
+4. ANIMATIONS:
+   - tween() pour les transitions douces
+   - delayedcall() pour décaler les animations
+   - Durées de 0.25s à 0.3s pour un effet fluide
+
+PERSONNALISATION:
+
+- Couleur principale: 0x00adef (bleu Mercedes)
+- Position du hotspot: Modifier ath et atv
+- Taille du popup: width=450 (ajustable)
+- Texte du bouton: Modifier le texte dans style="info_button"
+
+EXEMPLES D'ANGLES (ath, atv):
+- ath="0"   atv="0"   : Face avant, centre
+- ath="90"  atv="0"   : Côté droit, centre
+- ath="180" atv="0"   : Face arrière, centre
+- ath="270" atv="0"   : Côté gauche, centre
+- ath="0"   atv="20"  : Face avant, vers le haut
+- ath="0"   atv="-20" : Face avant, vers le bas
+-->
