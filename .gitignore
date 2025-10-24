@@ -1,0 +1,21 @@
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Backup files
+*.xml - backup-*
+
+# Testing servers
+tour_testingserver.exe
+tour_testingserver_macos
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Netlify
+.netlify/
