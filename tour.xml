@@ -310,7 +310,7 @@
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
 			html=×,
 			zorder=10001,
 			alpha=0,
@@ -341,7 +341,7 @@
 			bgalpha=1.0,
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:16px; font-weight:bold; text-align:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
 			html=Découvrir le GLC Coupé,
 			zorder=10002,
 			alpha=0,
@@ -420,7 +420,7 @@
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
 			html=×,
 			zorder=10001,
 			alpha=0,
@@ -451,7 +451,7 @@
 			bgalpha=1.0,
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:16px; font-weight:bold; text-align:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
 			html=Contactez-nous,
 			zorder=10002,
 			alpha=0,
@@ -474,8 +474,7 @@
 
 	<!-- Action pour maintenir le titre constant -->
 	<action name="set_page_title">
-		set(page_title, 'Mercedes Benz by CFAO - Visite virtuelle');
-		js(document.title = get(page_title));
+		js(document.title = 'Mercedes Benz by CFAO - Visite virtuelle');
 	</action>
 
 	<!-- Événement global : maintenir le titre à chaque changement de scène -->
@@ -491,7 +490,7 @@
 		<preview url="panos/01_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/01_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/01_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834231950" style="skin_hotspotstyle" ath="-4.411" atv="8.517" depth="1000.0" linkedscene="scene_04_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834232234" linkedscene_hoffset="359.4" use3dtransition="true" />
@@ -517,7 +516,7 @@
 		<preview url="panos/02_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/02_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/02_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -531,7 +530,7 @@
 		<preview url="panos/03_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/03_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/03_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -545,7 +544,7 @@
 		<preview url="panos/04_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/04_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/04_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834232234" style="skin_hotspotstyle" ath="174.992" atv="28.055" depth="1000.0" linkedscene="scene_01_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834231950" linkedscene_hoffset="0.6" use3dtransition="true" />
@@ -562,7 +561,7 @@
 		<preview url="panos/05_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/05_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/05_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834232548" style="skin_hotspotstyle" ath="176.82" atv="28.643" depth="1000.0" linkedscene="scene_04_denoiseai_standard" linkedscene_lookat="0.0,0.0,122.62" linkedscene_spot="spot1834232294" linkedscene_hoffset="0.96" use3dtransition="true" />
@@ -579,7 +578,7 @@
 		<preview url="panos/06_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/06_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/06_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834233054" style="skin_hotspotstyle" ath="176.205" atv="23.983" depth="1000.0" linkedscene="scene_05_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834232803" linkedscene_hoffset="1.63" use3dtransition="true" />
@@ -597,7 +596,7 @@
 		<preview url="panos/07_2_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/07_2_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/07_2_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834305405" style="skin_hotspotstyle" ath="-153.7" atv="40.909" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="30.58,-2.2,120.27" linkedscene_spot="spot1834305140" linkedscene_hoffset="361.38" use3dtransition="true" />
@@ -613,7 +612,7 @@
 		<preview url="panos/09_2_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/09_2_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/09_2_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834233581" style="skin_hotspotstyle" ath="134.741" atv="34.267" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="-14.58,1.78,120.0" linkedscene_spot="spot1834233207" linkedscene_hoffset="24.83" use3dtransition="true" /> 
@@ -642,7 +641,7 @@
 		<preview url="panos/10_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/10_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/10_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834233581" style="skin_hotspotstyle" ath="105.261" atv="24.056" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="-18.9,1.78,120.0" linkedscene_spot="spot1834233207" linkedscene_hoffset="32.73" use3dtransition="true" />
@@ -671,7 +670,7 @@
 		<preview url="panos/10_interieur.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/10_interieur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,1440,1680,2304" />
+			<cube url="panos/10_interieur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304" />
 		</image>
 
 		
@@ -689,7 +688,7 @@
 		<preview url="panos/11_21_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/11_21_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/11_21_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834242064" style="skin_hotspotstyle" ath="322.329" atv="30.765" depth="1000.0" linkedscene="scene_20_denoiseai_standard" linkedscene_spot="spot1834241897" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -708,7 +707,7 @@
 		<preview url="panos/11_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/11_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/11_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834236700" style="skin_hotspotstyle" ath="87.707" atv="17.16" depth="1000.0" linkedscene="scene_10_denoiseai_standard" linkedscene_lookat="-48.22,6.1,120.0" linkedscene_spot="spot1834236297" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -726,7 +725,7 @@
 		<preview url="panos/12_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/12_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/12_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834237265" style="skin_hotspotstyle" ath="86.932" atv="17.462" depth="1000.0" linkedscene="scene_11_denoiseai_standard" linkedscene_lookat="-71.57,4.48,120.0" linkedscene_spot="spot1834237010" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -744,7 +743,7 @@
 		<preview url="panos/13_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/13_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/13_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834237530" style="skin_hotspotstyle" ath="88.962" atv="38.094" depth="1000.0" linkedscene="scene_12_denoiseai_standard" linkedscene_lookat="-32.15,13.84,120.0" linkedscene_spot="spot1834237321" linkedscene_hoffset="-2.09" use3dtransition="true" />
@@ -786,7 +785,7 @@
 		<preview url="panos/13_interieur.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/13_interieur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,1440,1680,2304" />
+			<cube url="panos/13_interieur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304" />
 		</image>
 
 		<hotspot name="spot1834237793" style="skin_hotspotstyle" ath="175.743" atv="6.869" depth="1000.0" linkedscene="scene_13_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834237660" linkedscene_hoffset="-0.0" use3dtransition="true" />
@@ -803,7 +802,7 @@
 		<preview url="panos/14_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/14_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/14_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -817,7 +816,7 @@
 		<preview url="panos/15_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/15_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/15_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834238204" style="skin_hotspotstyle" ath="90.019" atv="20.989" depth="1000.0" linkedscene="scene_13_denoiseai_standard" linkedscene_lookat="49.6,1.04,120.0" linkedscene_spot="spot1834237958" linkedscene_hoffset="20.66" use3dtransition="true" />
@@ -834,7 +833,7 @@
 		<preview url="panos/16_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/16_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/16_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834239417" style="skin_hotspotstyle" ath="138.052" atv="21.327" depth="1000.0" linkedscene="scene_15_denoiseai_standard" linkedscene_lookat="52.13,2.02,119.72" linkedscene_spot="spot1834239167" linkedscene_hoffset="46.56" use3dtransition="true" />
@@ -861,7 +860,7 @@
 		<preview url="panos/17_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/17_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/17_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834240411" style="skin_hotspotstyle" ath="-162.143" atv="32.336" depth="1000.0" linkedscene="scene_16_denoiseai_standard" linkedscene_lookat="106.72,9.39,120.0" linkedscene_spot="spot1834239802" linkedscene_hoffset="373.41" use3dtransition="true" />
@@ -878,7 +877,7 @@
 		<preview url="panos/18_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/18_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/18_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834240851" style="skin_hotspotstyle" ath="-98.481" atv="31.071" depth="1000.0" linkedscene="scene_17_denoiseai_standard" linkedscene_lookat="134.98,0.7,120.0" linkedscene_spot="spot1834240492" linkedscene_hoffset="361.27" use3dtransition="true" />
@@ -895,7 +894,7 @@
 		<preview url="panos/19_2_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/19_2_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/19_2_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834241171" style="skin_hotspotstyle" ath="270.203" atv="38.084" depth="1000.0" linkedscene="scene_18_denoiseai_standard" linkedscene_lookat="132.06,12.38,120.0" linkedscene_spot="spot1834240965" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -913,7 +912,7 @@
 		<preview url="panos/19_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/19_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/19_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -927,7 +926,7 @@
 		<preview url="panos/20_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/20_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/20_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834241854" style="skin_hotspotstyle" ath="269.331" atv="21.008" depth="1000.0" linkedscene="scene_19_2_denoiseai_standard" linkedscene_lookat="98.97,10.46,120.0" linkedscene_spot="spot1834241562" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -944,7 +943,7 @@
 		<preview url="panos/21_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/21_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/21_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -958,7 +957,7 @@
 		<preview url="panos/22_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/22_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/22_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834243286" style="skin_hotspotstyle" ath="-145.227" atv="26.292" depth="1000.0" linkedscene="scene_11_21_denoiseai_standard" linkedscene_lookat="71.77,4.54,120.0" linkedscene_spot="spot1834242873" linkedscene_hoffset="370.66" use3dtransition="true" />
@@ -975,7 +974,7 @@
 		<preview url="panos/23_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/23_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/23_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834244503" style="skin_hotspotstyle" ath="258.731" atv="23.002" depth="1000.0" linkedscene="scene_22_denoiseai_standard" linkedscene_lookat="104.61,6.78,120.0" linkedscene_spot="spot1834244326" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -993,7 +992,7 @@
 		<preview url="panos/24_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/24_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/24_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834245320" style="skin_hotspotstyle" ath="-96.905" atv="34.214" depth="1000.0" linkedscene="scene_23_denoiseai_standard" linkedscene_lookat="96.86,0.47,120.0" linkedscene_spot="spot1834245060" linkedscene_hoffset="362.71" use3dtransition="true" />
@@ -1010,7 +1009,7 @@
 		<preview url="panos/25_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/25_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/25_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834245978" style="skin_hotspotstyle" ath="269.838" atv="23.64" depth="1000.0" linkedscene="scene_24_denoiseai_standard" linkedscene_lookat="96.97,-2.25,120.0" linkedscene_spot="spot1834245722" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1027,7 +1026,7 @@
 		<preview url="panos/26_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1041,7 +1040,7 @@
 		<preview url="panos/26a_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26a_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26a_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1055,7 +1054,7 @@
 		<preview url="panos/26b_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26b_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26b_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1069,7 +1068,7 @@
 		<preview url="panos/26c_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26c_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26c_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1083,7 +1082,7 @@
 		<preview url="panos/26d_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26d_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26d_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1097,7 +1096,7 @@
 		<preview url="panos/26e_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26e_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26e_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1111,7 +1110,7 @@
 		<preview url="panos/26f_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26f_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26f_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1125,7 +1124,7 @@
 		<preview url="panos/26g_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26g_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26g_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834249636" style="skin_hotspotstyle" ath="215.062" atv="17.036" depth="1000.0" linkedscene="scene_30b_denoiseai_standard" linkedscene_lookat="32.72,6.2,120.0" linkedscene_spot="spot1834249418" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1142,7 +1141,7 @@
 		<preview url="panos/26h_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26h_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26h_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1156,7 +1155,7 @@
 		<preview url="panos/26i_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26i_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26i_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834249845" style="skin_hotspotstyle" ath="186.345" atv="21.76" depth="1000.0" linkedscene="scene_26g_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834249700" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1173,7 +1172,7 @@
 		<preview url="panos/26j_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/26j_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/26j_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834250170" style="skin_hotspotstyle" ath="86.472" atv="26.286" depth="1000.0" linkedscene="scene_26i_denoiseai_standard" linkedscene_lookat="-96.21,-4.6,120.0" linkedscene_spot="spot1834249972" linkedscene_hoffset="3.72" use3dtransition="true" />
@@ -1189,7 +1188,7 @@
 		<preview url="panos/27_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/27_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/27_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834246717" style="skin_hotspotstyle" ath="-49.228" atv="23.263" depth="1000.0" linkedscene="scene_25_denoiseai_standard" linkedscene_lookat="-187.62,1.72,120.0" linkedscene_spot="spot1834246087" linkedscene_hoffset="389.44" use3dtransition="true" />
@@ -1206,7 +1205,7 @@
 		<preview url="panos/28_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/28_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/28_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834247181" style="skin_hotspotstyle" ath="327.409" atv="30.082" depth="1000.0" linkedscene="scene_27_denoiseai_standard" linkedscene_lookat="177.68,2.48,120.0" linkedscene_spot="spot1834246948" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1225,7 +1224,7 @@
 		<preview url="panos/29_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/29_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/29_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834276134" style="skin_hotspotstyle" ath="261.581" atv="19.481" depth="1000.0" linkedscene="scene_09_2_denoiseai_standard" linkedscene_lookat="100.8,-4.39,140.0" linkedscene_spot="spot1834275795" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1241,7 +1240,7 @@
 		<preview url="panos/30_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/30_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/30_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834247544" style="skin_hotspotstyle" ath="270.093" atv="17.407" depth="1000.0" linkedscene="scene_28_denoiseai_standard" linkedscene_lookat="94.06,4.7,120.0" linkedscene_spot="spot1834247281" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1259,7 +1258,7 @@
 		<preview url="panos/30a_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/30a_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/30a_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834248010" style="skin_hotspotstyle" ath="-164.977" atv="23.644" depth="1000.0" linkedscene="scene_30_denoiseai_standard" linkedscene_lookat="-1.06,-0.18,120.0" linkedscene_spot="spot1834247824" linkedscene_hoffset="360.34" use3dtransition="true" />
@@ -1277,7 +1276,7 @@
 		<preview url="panos/30b_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/30b_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/30b_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834248253" style="skin_hotspotstyle" ath="-160.138" atv="25.677" depth="1000.0" linkedscene="scene_30a_denoiseai_standard" linkedscene_lookat="-3.57,1.24,120.08" linkedscene_spot="spot1834248084" linkedscene_hoffset="365.09" use3dtransition="true" />
@@ -1295,7 +1294,7 @@
 		<preview url="panos/31_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/31_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/31_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834250900" style="skin_hotspotstyle" ath="311.106" atv="23.841" depth="1000.0" linkedscene="scene_30a_denoiseai_standard" linkedscene_lookat="143.79,0.12,120.0" linkedscene_spot="spot1834250681" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1312,7 +1311,7 @@
 		<preview url="panos/32_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/32_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834251242" style="skin_hotspotstyle" ath="242.712" atv="18.983" depth="1000.0" linkedscene="scene_31_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834250994" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1332,7 +1331,7 @@
 		<preview url="panos/32a_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32a_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/32a_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1346,7 +1345,7 @@
 		<preview url="panos/32b_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32b_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/32b_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834251652" style="skin_hotspotstyle" ath="-161.29" atv="30.689" depth="1000.0" linkedscene="scene_32_denoiseai_standard" linkedscene_lookat="20.92,10.39,117.54" linkedscene_spot="spot1834251361" linkedscene_hoffset="369.82" use3dtransition="true" />
@@ -1365,7 +1364,7 @@
 		<preview url="panos/32bd_interieur.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32bd_interieur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,1440,1680,2304" />
+			<cube url="panos/32bd_interieur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304" />
 		</image>
 
 		<hotspot name="spot1834249148" style="skin_hotspotstyle" ath="88.108" atv="2.886" depth="1000.0" linkedscene="scene_30b_denoiseai_standard" linkedscene_spot="spot1834248338" linkedscene_hoffset="178.38" use3dtransition="true" />
@@ -1382,7 +1381,7 @@
 		<preview url="panos/32c_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32c_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/32c_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834252912" style="skin_hotspotstyle" ath="192.528" atv="21.61" depth="1000.0" linkedscene="scene_32b_denoiseai_standard" linkedscene_lookat="19.54,0.31,120.0" linkedscene_spot="spot1834252712" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1399,7 +1398,7 @@
 		<preview url="panos/32d_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32d_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/32d_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1413,7 +1412,7 @@
 		<preview url="panos/32e_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32e_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/32e_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834253417" style="skin_hotspotstyle" ath="-104.362" atv="28.788" depth="1000.0" linkedscene="scene_32c_denoiseai_standard" linkedscene_lookat="-326.71,-0.39,120.0" linkedscene_spot="spot1834253092" linkedscene_hoffset="329.69" use3dtransition="true" />
@@ -1430,7 +1429,7 @@
 		<preview url="panos/32f_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32f_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/32f_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834256107" style="skin_hotspotstyle" ath="3.862" atv="27.07" depth="1000.0" linkedscene="scene_32e_denoiseai_standard" linkedscene_lookat="209.01,-13.48,120.0" linkedscene_spot="spot1834255671" linkedscene_hoffset="334.4" use3dtransition="true" />
@@ -1447,7 +1446,7 @@
 		<preview url="panos/32g_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32g_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/32g_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834256398" style="skin_hotspotstyle" ath="357.246" atv="26.546" depth="1000.0" linkedscene="scene_32f_denoiseai_standard" linkedscene_lookat="-147.5,19.14,120.0" linkedscene_spot="spot1834256201" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1464,7 +1463,7 @@
 		<preview url="panos/32g_inteireur.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/32g_inteireur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,1440,1680,2304" />
+			<cube url="panos/32g_inteireur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304" />
 		</image>
 
 		<hotspot name="spot1834252615" style="skin_hotspotstyle" ath="-100.788" atv="11.681" depth="1000.0" linkedscene="scene_32b_denoiseai_standard" linkedscene_lookat="99.87,11.12,120.0" linkedscene_spot="spot1834252385" linkedscene_hoffset="320.72" use3dtransition="true" />
@@ -1481,7 +1480,7 @@
 		<preview url="panos/33_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/33_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/33_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834255008" style="skin_hotspotstyle" ath="-94.543" atv="22.721" depth="1000.0" linkedscene="scene_32_denoiseai_standard" linkedscene_lookat="86.04,9.31,120.0" linkedscene_spot="spot1834254747" linkedscene_hoffset="360.8" use3dtransition="true" />
@@ -1498,7 +1497,7 @@
 		<preview url="panos/34_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/34_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/34_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834255330" style="skin_hotspotstyle" ath="-92.045" atv="20.219" depth="1000.0" linkedscene="scene_33_denoiseai_standard" linkedscene_lookat="75.31,4.52,120.0" linkedscene_spot="spot1834255096" linkedscene_hoffset="-3.56" use3dtransition="true" />
@@ -1516,7 +1515,7 @@
 		<preview url="panos/36_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/36_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/36_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834257105" style="skin_hotspotstyle" ath="-93.205" atv="15.526" depth="1000.0" linkedscene="scene_34_denoiseai_standard" linkedscene_lookat="87.75,-1.55,120.0" linkedscene_spot="spot1834256905" linkedscene_hoffset="360.48" use3dtransition="true" />
@@ -1533,7 +1532,7 @@
 		<preview url="panos/37_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/37_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/37_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834257473" style="skin_hotspotstyle" ath="267.318" atv="15.078" depth="1000.0" linkedscene="scene_36_denoiseai_standard" linkedscene_lookat="95.91,-3.16,120.0" linkedscene_spot="spot1834257254" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1550,7 +1549,7 @@
 		<preview url="panos/38_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/38_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/38_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834257738" style="skin_hotspotstyle" ath="-104.389" atv="25.267" depth="1000.0" linkedscene="scene_37_denoiseai_standard" linkedscene_lookat="94.72,-4.63,120.0" linkedscene_spot="spot1834257566" linkedscene_hoffset="376.76" use3dtransition="true" />
@@ -1568,7 +1567,7 @@
 		<preview url="panos/39_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/39_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/39_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834259972" style="skin_hotspotstyle" ath="283.557" atv="21.289" depth="1000.0" linkedscene="scene_38_denoiseai_standard" linkedscene_lookat="100.94,14.11,120.0" linkedscene_spot="spot1834259746" linkedscene_hoffset="0.0" use3dtransition="true" />
@@ -1585,7 +1584,7 @@
 		<preview url="panos/40_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/40_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/40_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834260251" style="skin_hotspotstyle" ath="-93.303" atv="25.809" depth="1000.0" linkedscene="scene_39_denoiseai_standard" linkedscene_lookat="-4.25,1.09,120.0" linkedscene_spot="spot1834260051" linkedscene_hoffset="324.37" use3dtransition="true" />
@@ -1602,7 +1601,7 @@
 		<preview url="panos/41_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/41_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/41_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834259593" style="skin_hotspotstyle" ath="-44.72" atv="3.327" depth="1000.0" linkedscene="scene_41_interieur" linkedscene_lookat="95.55,6.32,120.0" linkedscene_spot="spot1834258952" linkedscene_hoffset="149.13" use3dtransition="true" />
@@ -1620,7 +1619,7 @@
 		<preview url="panos/41_interieur.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/41_interieur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,1440,1680,2304" />
+			<cube url="panos/41_interieur.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304" />
 		</image>
 
 		<hotspot name="spot1834258682" style="skin_hotspotstyle" ath="75.787" atv="8.781" depth="1000.0" linkedscene="scene_48_denoiseai_standard" linkedscene_spot="spot1834258344" linkedscene_hoffset="181.72" use3dtransition="true" />
@@ -1637,7 +1636,7 @@
 		<preview url="panos/42_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/42_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/42_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834261087" style="skin_hotspotstyle" ath="-174.283" atv="19.633" depth="1000.0" linkedscene="scene_41_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834260933" linkedscene_hoffset="359.41" use3dtransition="true" />
@@ -1654,7 +1653,7 @@
 		<preview url="panos/43_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/43_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/43_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834261472" style="skin_hotspotstyle" ath="-176.633" atv="15.833" depth="1000.0" linkedscene="scene_42_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834261121" linkedscene_hoffset="349.72" use3dtransition="true" />
@@ -1671,7 +1670,7 @@
 		<preview url="panos/44_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/44_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/44_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834261713" style="skin_hotspotstyle" ath="127.637" atv="26.893" depth="1000.0" linkedscene="scene_43_denoiseai_standard" linkedscene_lookat="-72.4,-1.39,120.0" linkedscene_spot="spot1834261553" linkedscene_hoffset="-5.16" use3dtransition="true" />
@@ -1687,7 +1686,7 @@
 		<preview url="panos/45_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/45_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/45_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1701,7 +1700,7 @@
 		<preview url="panos/46_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/46_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/46_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1715,7 +1714,7 @@
 		<preview url="panos/46a_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/46a_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/46a_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1729,7 +1728,7 @@
 		<preview url="panos/47_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/47_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/47_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 	</scene>
@@ -1743,7 +1742,7 @@
 		<preview url="panos/48_DeNoiseAI_standard.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/48_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,1440,1680" />
+			<cube url="panos/48_DeNoiseAI_standard.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
 
 		<hotspot name="spot1834258288" style="skin_hotspotstyle" ath="226.599" atv="19.229" depth="1000.0" linkedscene="scene_38_denoiseai_standard" linkedscene_lookat="99.93,-6.15,120.0" linkedscene_spot="spot1834257864" linkedscene_hoffset="0.0" use3dtransition="true" />
