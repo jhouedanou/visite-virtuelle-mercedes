@@ -260,7 +260,7 @@
 		);
 
 		<!-- Contenu texte simple de la popup -->
-		set(popup_content, '<b style="font-size:28px; color:#00adef; line-height:1.5; font-family:\'Corporate A BQ\', Arial;">MERCEDES-BENZ</b><br><br><span style="font-size:20px; line-height:2; font-family:\'Corporate A BQ\', Arial;">Découvrez l&#39;excellence automobile allemande. Innovation, luxe et performance réunis dans chaque détail.<br><br>Notre gamme exclusive combine design raffiné et technologies de pointe pour une expérience de conduite incomparable.</span>');
+		set(popup_content, '<b style="font-size:28px; color:#00adef; line-height:1.5;">MERCEDES-BENZ</b>[br][br]<span style="font-size:20px; line-height:2;">Découvrez l'excellence automobile allemande. Innovation, luxe et performance réunis dans chaque détail.[br][br]Notre gamme exclusive combine design raffiné et technologies de pointe pour une expérience de conduite incomparable.</span>');
 
 		copy(layer[info_popup].html, popup_content);
 
@@ -342,7 +342,7 @@
 		);
 
 		<!-- Contenu texte GLC Coupé -->
-		set(popup_content, '<b style="font-size:30px; color:#00adef; line-height:1.4; font-family:\'Corporate A BQ\', Arial;">GLC Coupé</b><br><br><span style="font-size:20px; line-height:2; font-family:\'Corporate A BQ\', Arial;">Plus qu&#39;un SUV. Plus qu&#39;un coupé.<br><br>Le GLC Coupé combine les mérites d&#39;un SUV et d&#39;un coupé. Plus sportif et plus avant-gardiste que jamais.</span>');
+		set(popup_content, '<b style="font-size:30px; color:#00adef; line-height:1.4;">GLC Coupé</b>[br][br]<span style="font-size:20px; line-height:2;">Plus qu'un SUV. Plus qu'un coupé.[br][br]Le GLC Coupé combine les mérites d'un SUV et d'un coupé. Plus sportif et plus avant-gardiste que jamais.</span>');
 
 		copy(layer[info_popup].html, popup_content);
 
@@ -453,7 +453,7 @@
 		);
 
 		<!-- Contenu texte GLC 200 avec coordonnées CFAO -->
-		set(popup_content, '<b style="font-size:28px; color:#00adef; line-height:1.5; font-family:\'Corporate A BQ\', Arial;">CFAO Mobility Côte d&#39;Ivoire</b><br><br><span style="font-size:20px; line-height:2; font-family:\'Corporate A BQ\', Arial;">BP 2114 Abidjan 01<br>117 Boulevard de Marseille<br><br><b>Tél :</b> 07 01 52 52 52</span>');
+		set(popup_content, '<b style="font-size:28px; color:#00adef; line-height:1.5;">CFAO Mobility Côte d[sq]Ivoire</b>[br][br]<span style="font-size:20px; line-height:2;">BP 2114 Abidjan 01[br]117 Boulevard de Marseille[br][br]<b>Tél :</b> 07 01 52 52 52</span>');
 
 		copy(layer[info_popup].html, popup_content);
 
