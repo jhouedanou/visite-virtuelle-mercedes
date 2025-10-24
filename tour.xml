@@ -460,14 +460,28 @@
 		<!-- Bouton Contactez-nous -->
 		addlayer(contact_button);
 		set(layer[contact_button],
-			style=popup_button,
+			type=text,
 			parent=info_popup_bg,
+			align=center,
+			edge=center,
+			vcenter=true,
 			y=150,
-			text=Contactez-nous,
+			width=240,
+			height=60,
+			bgcolor=0x00adef,
+			bgalpha=1.0,
+			bgroundedge=8,
+			bgshadow=0 4 10 0x000000 0.6,
+			textalign=center,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
+			html=Contactez-nous,
 			zorder=10002,
 			alpha=0,
 			scale=0.8,
-			onclick=js(window.open('https://www.mercedes-benz-rci.com/fr/concession/', '_blank');)
+			handcursor=true,
+			onclick=js(window.open('https://www.mercedes-benz-rci.com/fr/concession/', '_blank');),
+			onover=tween(scale|bgcolor, 1.05|0x0090cf, 0.2),
+			onout=tween(scale|bgcolor, 1.0|0x00adef, 0.2)
 		);
 
 		<!-- Animations d'apparition -->

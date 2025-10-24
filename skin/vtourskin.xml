@@ -281,6 +281,9 @@
 	       onclick="skin_hotspotstyle_click();"
 	       depth="1000"
 	       scale="0.5"
+	       onover="tween(scale|alpha, 0.6|1.0, 0.3, easeOutQuad);"
+	       onout="tween(scale|alpha, 0.5|0.85, 0.3, easeInQuad);"
+	       alpha="0.85"
 	       onloaded.addevent=""
 	       />
 

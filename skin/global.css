@@ -1,0 +1,15 @@
+/* Police Corporate A BQ pour tous les éléments */
+@import url('fonts/stylesheet.css');
+
+* {
+    font-family: 'Corporate A BQ', Arial, Helvetica, sans-serif !important;
+}
+
+body, html {
+    font-family: 'Corporate A BQ', Arial, Helvetica, sans-serif !important;
+}
+
+/* Force la police sur tous les éléments de texte krpano */
+div, span, p, a, button, input, textarea, select {
+    font-family: 'Corporate A BQ', Arial, Helvetica, sans-serif !important;
+}
