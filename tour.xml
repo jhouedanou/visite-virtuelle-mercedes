@@ -879,7 +879,7 @@
 		<hotspot name="info_glc_200_scene16"
 		         style="info_text_button"
 		         text="i"
-		         ath="0"
+		         ath="130"
 		         atv="-10"
 		         onclick="show_glc_200_info();"
 		         tooltip="GLC 200"
