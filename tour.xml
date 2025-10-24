@@ -494,22 +494,12 @@
 
 		<hotspot name="spot1834231950" style="skin_hotspotstyle" ath="-4.411" atv="8.517" depth="1000.0" linkedscene="scene_04_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834232234" linkedscene_hoffset="359.4" use3dtransition="true" />
 
-		<!-- Hotspot info Mercedes avec icône "i" -->
-		<hotspot name="info_mercedes_scene01"
-		         style="info_text_button"
-		         text="i"
-		         ath="-4.411"
-		         atv="0.0"
-		         onclick="show_mercedes_info();"
-		         tooltip="Afficher le showroom"
-		         />
-
 		<!-- Hotspot info CFAO avec icône "i" -->
 		<hotspot name="info_cfao_scene01"
 		         style="info_text_button"
 		         text="i"
-		         ath="20"
-		         atv="-10"
+		         ath="-4.411"
+		         atv="0.0"
 		         onclick="show_glc_200_info();"
 		         tooltip="CFAO Mobility - Contactez-nous"
 		         />
