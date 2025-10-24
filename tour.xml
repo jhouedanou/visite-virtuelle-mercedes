@@ -55,7 +55,7 @@
 	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
 	               design_thumbborder_padding="2"
 	               design_thumbborder_bgroundedge="0"
-	               design_text_css="color:#FFFFFF; font-family:'Corporate A BQ', Arial;"
+	               design_text_css="color:#FFFFFF; font-family:'Corporate A BQ', Arial !important;"
 	               design_text_shadow="1"
 	               />
 
@@ -132,7 +132,7 @@
 	<style name="info_text_button"
 	       type="text"
 	       renderer="webgl"
-	       css="color:#FFFFFF; font-size:20px; font-weight:bold; text-align:center; font-family:'Corporate A BQ', Arial;"
+	       css="color:#FFFFFF; font-size:20px; font-weight:bold; text-align:center; font-family:'Corporate A BQ', Arial !important;"
 	       textalign="center"
 	       width="50" height="50"
 	       bgroundedge="100"

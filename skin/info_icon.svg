@@ -3,5 +3,5 @@
   <circle cx="32" cy="32" r="30" fill="#00adef" stroke="#ffffff" stroke-width="3"/>
 
   <!-- Lettre I majuscule -->
-  <text x="32" y="48" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" text-anchor="middle">i</text>
+  <text x="32" y="48" font-family="'Corporate A BQ', Arial, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" text-anchor="middle">i</text>
 </svg>
