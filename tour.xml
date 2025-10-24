@@ -430,19 +430,19 @@
 			onout=tween(scale|bgcolor, 1.0|0xff0000, 0.2)
 		);
 
-		<!-- Contenu texte GLC avec description design -->
-		set(popup_content, '<b style="font-size:20px; color:#00adef;">Nouveau GLC</b>[br][br]Un design qui séduit sur toutes les routes[br][br]Des lignes claires et des proportions dynamiques caractérisent le design du Nouveau GLC. La présence sportive du SUV séduit aussi bien en ville qu[sq]en dehors de la route.[br]');
+		<!-- Contenu texte GLC 200 avec coordonnées CFAO -->
+		set(popup_content, '<b style="font-size:18px; color:#00adef;">CFAO Mobility Côte d[sq]Ivoire</b>[br][br]01 BP 2114 Abidjan 01[br]117 Boulevard de Marseille[br][br]<b>Tél :</b> 07 01 52 52 52[br]');
 
 		copy(layer[info_popup].html, popup_content);
 
-		<!-- Bouton Découvrir -->
+		<!-- Bouton Contactez-nous -->
 		addlayer(contact_button);
 		set(layer[contact_button],
 			type=text,
 			parent=info_popup_bg,
 			align=center,
 			edge=center,
-			y=170,
+			y=150,
 			width=200,
 			height=45,
 			bgcolor=0x00adef,
@@ -450,12 +450,12 @@
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
 			css=color:#ffffff; font-family:Arial; font-size:16px; font-weight:bold; text-align:center; line-height:45px;,
-			html=Découvrir le GLC,
+			html=Contactez-nous,
 			zorder=10002,
 			alpha=0,
 			scale=0.8,
 			handcursor=true,
-			onclick=js(window.open('https://www.mercedes-benz-rci.com/fr/range/glc', '_blank');),
+			onclick=js(window.open('https://www.mercedes-benz-rci.com/fr/concession/', '_blank');),
 			onover=tween(scale|bgcolor, 1.05|0x0090cf, 0.2),
 			onout=tween(scale|bgcolor, 1.0|0x00adef, 0.2)
 		);
