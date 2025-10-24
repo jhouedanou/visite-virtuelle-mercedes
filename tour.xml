@@ -362,7 +362,7 @@
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
 			textalign=center,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:14px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
 			html=Découvrir le GLC Coupé,
 			zorder=10002,
 			alpha=0,
@@ -473,7 +473,7 @@
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
 			textalign=center,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:14px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
 			html=Contactez-nous,
 			zorder=10002,
 			alpha=0,
@@ -584,7 +584,7 @@
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
 			textalign=center,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:14px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
 			html=Découvrir la Classe C,
 			zorder=10002,
 			alpha=0,
@@ -695,7 +695,7 @@
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
 			textalign=center,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:14px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
 			html=Découvrir la Classe E,
 			zorder=10002,
 			alpha=0,
@@ -806,7 +806,7 @@
 			bgroundedge=8,
 			bgshadow=0 4 10 0x000000 0.6,
 			textalign=center,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:22px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
+			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:14px; font-weight:bold; text-align:center; line-height:1.2; display:flex; align-items:center; justify-content:center;,
 			html=Découvrir le GLE Coupé,
 			zorder=10002,
 			alpha=0,
@@ -862,7 +862,7 @@
 
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/01_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -888,7 +888,7 @@
 
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/02_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -902,7 +902,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/03_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -916,7 +916,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/04_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -933,7 +933,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/05_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -950,7 +950,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/06_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -969,7 +969,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/07_2_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -985,7 +985,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/09_2_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1014,7 +1014,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/10_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1043,7 +1043,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/10_interieur.tiles/preview.jpg" />
 
@@ -1061,7 +1061,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/11_21_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1080,7 +1080,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/11_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1098,7 +1098,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/12_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1116,7 +1116,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/13_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1158,7 +1158,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/13_interieur.tiles/preview.jpg" />
 
@@ -1175,7 +1175,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/14_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1189,7 +1189,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/15_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1206,7 +1206,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/16_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1233,7 +1233,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/17_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1250,7 +1250,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/18_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1268,7 +1268,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19_2_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1286,7 +1286,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/19_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1300,7 +1300,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/20_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1318,7 +1318,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/21_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1332,7 +1332,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/22_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1350,7 +1350,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/23_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1368,7 +1368,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/24_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1385,7 +1385,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/25_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1402,7 +1402,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1416,7 +1416,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26a_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1430,7 +1430,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26b_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1444,7 +1444,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26c_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1458,7 +1458,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26d_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1472,7 +1472,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26e_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1486,7 +1486,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26f_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1500,7 +1500,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26g_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1517,7 +1517,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26h_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1531,7 +1531,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26i_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1548,7 +1548,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/26j_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1564,7 +1564,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/27_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1582,7 +1582,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/28_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1601,7 +1601,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/29_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1620,7 +1620,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/30_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1638,7 +1638,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/30a_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1656,7 +1656,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/30b_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1674,7 +1674,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/31_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1692,7 +1692,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1731,7 +1731,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32a_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1745,7 +1745,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32b_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1764,7 +1764,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32bd_interieur.tiles/preview.jpg" />
 
@@ -1781,7 +1781,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32c_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1798,7 +1798,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32d_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1812,7 +1812,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32e_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1829,7 +1829,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32f_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1846,7 +1846,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32g_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1865,7 +1865,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/32g_inteireur.tiles/preview.jpg" />
 
@@ -1882,7 +1882,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/33_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1899,7 +1899,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/34_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1917,7 +1917,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/36_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1935,7 +1935,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/37_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1953,7 +1953,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/38_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1971,7 +1971,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/39_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -1998,7 +1998,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/40_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -2015,7 +2015,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/41_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -2033,7 +2033,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/41_interieur.tiles/preview.jpg" />
 
@@ -2050,7 +2050,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/42_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -2067,7 +2067,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/43_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -2084,7 +2084,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/44_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -2100,7 +2100,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/45_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -2114,7 +2114,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/46_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -2128,7 +2128,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/46a_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -2142,7 +2142,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/47_DeNoiseAI_standard.tiles/preview.jpg" />
 
@@ -2156,7 +2156,7 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="DFOV" fov="120" maxpixelzoom="4.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/48_DeNoiseAI_standard.tiles/preview.jpg" />
 
