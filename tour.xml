@@ -236,7 +236,7 @@
 		<!-- Bouton fermer (croix blanche sur fond rouge) -->
 		addlayer(close_button);
 		set(layer[close_button],
-			type=text,
+			type=image,
 			parent=info_popup_bg,
 			align=center,
 			edge=center,
@@ -244,12 +244,11 @@
 			y=-150,
 			width=40,
 			height=40,
+			url=skin/close_icon.svg,
 			bgcolor=0xff0000,
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center;,
-			html=×,
 			zorder=10001,
 			alpha=0,
 			scale=0.8,
@@ -318,7 +317,7 @@
 		<!-- Bouton fermer (croix blanche sur fond rouge) -->
 		addlayer(close_button);
 		set(layer[close_button],
-			type=text,
+			type=image,
 			parent=info_popup_bg,
 			align=center,
 			edge=center,
@@ -326,12 +325,11 @@
 			y=-200,
 			width=40,
 			height=40,
+			url=skin/close_icon.svg,
 			bgcolor=0xff0000,
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
-			html=×,
 			zorder=10001,
 			alpha=0,
 			scale=0.8,
@@ -429,7 +427,7 @@
 		<!-- Bouton fermer (croix blanche sur fond rouge) -->
 		addlayer(close_button);
 		set(layer[close_button],
-			type=text,
+			type=image,
 			parent=info_popup_bg,
 			align=center,
 			edge=center,
@@ -437,12 +435,11 @@
 			y=-200,
 			width=40,
 			height=40,
+			url=skin/close_icon.svg,
 			bgcolor=0xff0000,
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
-			html=×,
 			zorder=10001,
 			alpha=0,
 			scale=0.8,
@@ -540,7 +537,7 @@
 		<!-- Bouton fermer (croix blanche sur fond rouge) -->
 		addlayer(close_button);
 		set(layer[close_button],
-			type=text,
+			type=image,
 			parent=info_popup_bg,
 			align=center,
 			edge=center,
@@ -548,12 +545,11 @@
 			y=-200,
 			width=40,
 			height=40,
+			url=skin/close_icon.svg,
 			bgcolor=0xff0000,
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
-			html=×,
 			zorder=10001,
 			alpha=0,
 			scale=0.8,
@@ -651,7 +647,7 @@
 		<!-- Bouton fermer (croix blanche sur fond rouge) -->
 		addlayer(close_button);
 		set(layer[close_button],
-			type=text,
+			type=image,
 			parent=info_popup_bg,
 			align=center,
 			edge=center,
@@ -659,12 +655,11 @@
 			y=-200,
 			width=40,
 			height=40,
+			url=skin/close_icon.svg,
 			bgcolor=0xff0000,
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
-			html=×,
 			zorder=10001,
 			alpha=0,
 			scale=0.8,
@@ -762,7 +757,7 @@
 		<!-- Bouton fermer (croix blanche sur fond rouge) -->
 		addlayer(close_button);
 		set(layer[close_button],
-			type=text,
+			type=image,
 			parent=info_popup_bg,
 			align=center,
 			edge=center,
@@ -770,12 +765,11 @@
 			y=-200,
 			width=40,
 			height=40,
+			url=skin/close_icon.svg,
 			bgcolor=0xff0000,
 			bgalpha=1.0,
 			bgroundedge=20,
 			bgshadow=0 4 10 0x000000 0.6,
-			css=color:#ffffff; font-family:'Corporate A BQ', Arial; font-size:24px; font-weight:bold; text-align:center; line-height:40px;,
-			html=×,
 			zorder=10001,
 			alpha=0,
 			scale=0.8,
@@ -1242,7 +1236,7 @@
 		</image>
 
 		<hotspot name="spot1834240411" style="skin_hotspotstyle" ath="-162.143" atv="32.336" depth="1000.0" linkedscene="scene_16_denoiseai_standard" linkedscene_lookat="106.72,9.39,120.0" linkedscene_spot="spot1834239802" linkedscene_hoffset="373.41" use3dtransition="true" />
-		<hotspot name="spot1834240492" style="skin_hotspotstyle" ath="82.789" atv="27.159" depth="1000.0" linkedscene="scene_18_denoiseai_standard" linkedscene_lookat="134.98,0.7,120.0" />
+		<hotspot name="spot1834240492" style="skin_hotspotstyle" ath="82.789" atv="27.159" depth="1000.0" linkedscene="scene_18_denoiseai_standard" linkedscene_lookat="134.98,0.7,120.0" use3dtransition="true" />
 
 	</scene>
 
@@ -1260,7 +1254,7 @@
 
 		<hotspot name="spot1834240851" style="skin_hotspotstyle" ath="-98.481" atv="31.071" depth="1000.0" linkedscene="scene_17_denoiseai_standard" linkedscene_lookat="134.98,0.7,120.0" linkedscene_spot="spot1834240492" linkedscene_hoffset="361.27" use3dtransition="true" />
 		<hotspot name="spot1834240965" style="skin_hotspotstyle" ath="90.203" atv="38.084" depth="1000.0" linkedscene="scene_19_2_denoiseai_standard" linkedscene_lookat="132.06,12.38,120.0" linkedscene_spot="spot1834241171" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1834897626" style="skin_hotspotstyle" ath="-97.54" atv="31.777" depth="1000.0" linkedscene="scene_17_denoiseai_standard" linkedscene_lookat="134.98,0.7,120.0" linkedscene_spot="spot1834240492" linkedscene_hoffset="360.33" use3dtransition="true" />
+		
 
 	</scene>
 
@@ -1310,7 +1304,7 @@
 
 		<hotspot name="spot1834241854" style="skin_hotspotstyle" ath="269.331" atv="21.008" depth="1000.0" linkedscene="scene_19_2_denoiseai_standard" linkedscene_lookat="98.97,10.46,120.0" linkedscene_spot="spot1834241562" linkedscene_hoffset="0.0" use3dtransition="true" />
 		<hotspot name="spot1834241897" style="skin_hotspotstyle" ath="142.329" atv="30.765" depth="1000.0" linkedscene="scene_11_21_denoiseai_standard" linkedscene_spot="spot1834242064" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1835089327" style="skin_hotspotstyle" ath="88.265" atv="14.79" depth="1000.0" linkedscene="scene_22_denoiseai_standard" linkedscene_lookat="97.2,-10.26,120.0" />
+		<hotspot name="spot1835089327" style="skin_hotspotstyle" ath="88.265" atv="14.79" depth="1000.0" linkedscene="scene_22_denoiseai_standard" linkedscene_lookat="97.2,-10.26,120.0" use3dtransition="true" />
 
 	</scene>
 
@@ -1342,7 +1336,7 @@
 
 		<hotspot name="spot1834243286" style="skin_hotspotstyle" ath="-145.227" atv="26.292" depth="1000.0" linkedscene="scene_11_21_denoiseai_standard" linkedscene_lookat="71.77,4.54,120.0" linkedscene_spot="spot1834242873" linkedscene_hoffset="370.66" use3dtransition="true" />
 		<hotspot name="spot1834244326" style="skin_hotspotstyle" ath="78.731" atv="23.002" depth="1000.0" linkedscene="scene_23_denoiseai_standard" linkedscene_lookat="104.61,6.78,120.0" linkedscene_spot="spot1834244503" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1835088725" style="skin_hotspotstyle" ath="-88.359" atv="18.578" depth="1000.0" linkedscene="scene_19_2_denoiseai_standard" linkedscene_lookat="-126.81,5.99,120.0" />
+		<hotspot name="spot1835088725" style="skin_hotspotstyle" ath="-88.359" atv="18.578" depth="1000.0" linkedscene="scene_19_2_denoiseai_standard" linkedscene_lookat="-126.81,5.99,120.0" use3dtransition="true" />
 
 	</scene>
 
@@ -1574,7 +1568,7 @@
 
 		<hotspot name="spot1834246717" style="skin_hotspotstyle" ath="-49.228" atv="23.263" depth="1000.0" linkedscene="scene_25_denoiseai_standard" linkedscene_lookat="-187.62,1.72,120.0" linkedscene_spot="spot1834246087" linkedscene_hoffset="389.44" use3dtransition="true" />
 		<hotspot name="spot1834246948" style="skin_hotspotstyle" ath="108.918" atv="22.094" depth="1000.0" linkedscene="scene_28_denoiseai_standard" linkedscene_lookat="177.68,2.48,120.0" linkedscene_spot="spot1834247181" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1835092822" style="skin_hotspotstyle" ath="-131.37" atv="24.588" depth="1000.0" linkedscene="scene_09_2_denoiseai_standard" linkedscene_lookat="-78.14,1.86,120.0" />
+		<hotspot name="spot1835092822" style="skin_hotspotstyle" ath="-131.37" atv="24.588" depth="1000.0" linkedscene="scene_09_2_denoiseai_standard" linkedscene_lookat="-78.14,1.86,120.0" use3dtransition="true" />
 
 	</scene>
 
@@ -1592,7 +1586,7 @@
 
 		<hotspot name="spot1834247181" style="skin_hotspotstyle" ath="327.409" atv="30.082" depth="1000.0" linkedscene="scene_27_denoiseai_standard" linkedscene_lookat="177.68,2.48,120.0" linkedscene_spot="spot1834246948" linkedscene_hoffset="0.0" use3dtransition="true" />
 		<hotspot name="spot1834247281" style="skin_hotspotstyle" ath="90.038" atv="17.398" depth="1000.0" linkedscene="scene_30_denoiseai_standard" linkedscene_lookat="94.06,4.7,120.0" linkedscene_spot="spot1834247544" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1834275376" style="skin_hotspotstyle" ath="-104.987" atv="15.502" depth="1000.0" linkedscene="scene_10_denoiseai_standard" linkedscene_lookat="-90.7,8.37,140.0" />
+		<hotspot name="spot1834275376" style="skin_hotspotstyle" ath="-104.987" atv="15.502" depth="1000.0" linkedscene="scene_10_denoiseai_standard" linkedscene_lookat="-90.7,8.37,140.0" use3dtransition="true" />
 		
 
 	</scene>
@@ -1612,7 +1606,7 @@
 		<hotspot name="spot1834276134" style="skin_hotspotstyle" ath="261.581" atv="19.481" depth="1000.0" linkedscene="scene_09_2_denoiseai_standard" linkedscene_lookat="100.8,-4.39,140.0" linkedscene_spot="spot1834275795" linkedscene_hoffset="0.0" use3dtransition="true" />
 		<hotspot name="spot1834926797" style="skin_hotspotstyle" ath="-146.95" atv="29.002" depth="1000.0" linkedscene="scene_06_denoiseai_standard" linkedscene_lookat="18.15,-4.57,120.0" linkedscene_spot="spot1834926317" linkedscene_hoffset="361.35" use3dtransition="true" />
 		<hotspot name="spot1834927075" style="skin_hotspotstyle" ath="78.251" atv="17.414" depth="1000.0" linkedscene="scene_31_denoiseai_standard" linkedscene_lookat="65.98,3.08,120.0" linkedscene_spot="spot1834927460" linkedscene_hoffset="1.23" use3dtransition="true" />
-		<hotspot name="spot1834927732" style="skin_hotspotstyle" ath="33.805" atv="10.861" depth="1000.0" linkedscene="scene_30b_denoiseai_standard" linkedscene_lookat="-7.32,-0.17,120.0" />
+		<hotspot name="spot1834927732" style="skin_hotspotstyle" ath="33.805" atv="10.861" depth="1000.0" linkedscene="scene_30b_denoiseai_standard" linkedscene_lookat="-7.32,-0.17,120.0" use3dtransition="true" />
 
 	</scene>
 
@@ -1821,7 +1815,7 @@
 		</image>
 
 		<hotspot name="spot1834253417" style="skin_hotspotstyle" ath="-104.362" atv="28.788" depth="1000.0" linkedscene="scene_32c_denoiseai_standard" linkedscene_lookat="-326.71,-0.39,120.0" linkedscene_spot="spot1834253092" linkedscene_hoffset="329.69" use3dtransition="true" />
-		<hotspot name="spot1834255671" style="skin_hotspotstyle" ath="158.258" atv="23.681" depth="1000.0" linkedscene="scene_32f_denoiseai_standard" linkedscene_lookat="209.01,-13.48,120.0" />
+		<hotspot name="spot1834255671" style="skin_hotspotstyle" ath="158.258" atv="23.681" depth="1000.0" linkedscene="scene_32f_denoiseai_standard" linkedscene_lookat="209.01,-13.48,120.0" use3dtransition="true" />
 
 	</scene>
 
@@ -1857,7 +1851,7 @@
 		<hotspot name="spot1834256398" style="skin_hotspotstyle" ath="357.246" atv="26.546" depth="1000.0" linkedscene="scene_32f_denoiseai_standard" linkedscene_lookat="-147.5,19.14,120.0" linkedscene_spot="spot1834256201" linkedscene_hoffset="0.0" use3dtransition="true" />
 		<hotspot name="spot1834256457" style="interior_hotspotstyle" ath="-58.554" atv="13.943" depth="1000.0" linkedscene="scene_32g_inteireur" linkedscene_lookat="-75.8,-3.19,120.0" linkedscene_spot="spot1834256646" linkedscene_hoffset="359.53" use3dtransition="true" />
 		<hotspot name="spot1834942463" style="skin_hotspotstyle" ath="115.619" atv="12.43" depth="1000.0" linkedscene="scene_37_denoiseai_standard" linkedscene_lookat="110.1,-2.13,120.0" linkedscene_spot="spot1834942820" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1834943358" style="skin_hotspotstyle" ath="-125.191" atv="10.018" depth="1000.0" linkedscene="scene_32b_denoiseai_standard" linkedscene_lookat="-145.2,0.19,120.0" />
+		<hotspot name="spot1834943358" style="skin_hotspotstyle" ath="-125.191" atv="10.018" depth="1000.0" linkedscene="scene_32b_denoiseai_standard" linkedscene_lookat="-145.2,0.19,120.0" use3dtransition="true" />
 
 	</scene>
 
@@ -1927,7 +1921,7 @@
 
 		<hotspot name="spot1834257105" style="skin_hotspotstyle" ath="-93.205" atv="15.526" depth="1000.0" linkedscene="scene_34_denoiseai_standard" linkedscene_lookat="87.75,-1.55,120.0" linkedscene_spot="spot1834256905" linkedscene_hoffset="360.48" use3dtransition="true" />
 		<hotspot name="spot1834257254" style="skin_hotspotstyle" ath="87.318" atv="15.078" depth="1000.0" linkedscene="scene_37_denoiseai_standard" linkedscene_lookat="95.91,-3.16,120.0" linkedscene_spot="spot1834257473" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1834942975" style="skin_hotspotstyle" ath="-48.193" atv="17.301" depth="1000.0" linkedscene="scene_32g_denoiseai_standard" linkedscene_lookat="-64.25,9.65,120.0" />
+		<hotspot name="spot1834942975" style="skin_hotspotstyle" ath="-48.193" atv="17.301" depth="1000.0" linkedscene="scene_32g_denoiseai_standard" linkedscene_lookat="-64.25,9.65,120.0" use3dtransition="true" />
 
 	</scene>
 
@@ -2059,7 +2053,7 @@
 		</image>
 
 		<hotspot name="spot1834261087" style="skin_hotspotstyle" ath="-174.283" atv="19.633" depth="1000.0" linkedscene="scene_41_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" linkedscene_spot="spot1834260933" linkedscene_hoffset="359.41" use3dtransition="true" />
-		<hotspot name="spot1834261121" style="skin_hotspotstyle" ath="-6.91" atv="15.504" depth="1000.0" linkedscene="scene_43_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" />
+		<hotspot name="spot1834261121" style="skin_hotspotstyle" ath="-6.91" atv="15.504" depth="1000.0" linkedscene="scene_43_denoiseai_standard" linkedscene_lookat="0.0,0.0,120.0" use3dtransition="true" />
 
 	</scene>
 
