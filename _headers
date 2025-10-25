@@ -1,0 +1,54 @@
+# Headers pour optimisation Netlify - Visite Virtuelle Mercedes
+
+# Cache pour les images panoramiques (1 an)
+/panos/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache pour les assets statiques (1 an)
+/skin/*.png
+  Cache-Control: public, max-age=31536000, immutable
+/skin/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+/skin/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/skin/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+/skin/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+/skin/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache pour les fichiers JavaScript (1 an)
+/tour.js
+  Cache-Control: public, max-age=31536000, immutable
+/skin/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache court pour les fichiers de configuration (1 heure)
+/tour.xml
+  Cache-Control: public, max-age=3600
+
+# Cache court pour index.html (5 minutes)
+/index.html
+  Cache-Control: public, max-age=300
+
+# Headers de sécurité et performance pour tous les fichiers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Compression Brotli/Gzip (Netlify le fait automatiquement mais on force)
+/*.js
+  Content-Encoding: br
+/*.css
+  Content-Encoding: br
+/*.xml
+  Content-Encoding: br
+/*.svg
+  Content-Encoding: br
+
+# CORS pour les fonts
+/skin/fonts/*
+  Access-Control-Allow-Origin: *

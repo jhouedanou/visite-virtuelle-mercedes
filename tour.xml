@@ -1,5 +1,21 @@
 ﻿<krpano version="1.23" title="Mercedes Benz by CFAO">
 
+	<!-- Optimisations de chargement et préchargement -->
+	<preview type="grid(cube,64,64,512,0xFFFFFF);" />
+
+	<!-- Configuration du préchargement intelligent -->
+	<action name="preload_scene" autorun="onstart">
+		<!-- Précharger automatiquement les scènes voisines -->
+		set(preloadnextscene, true);
+	</action>
+
+	<!-- Paramètres de performance pour le chargement progressif -->
+	<memory maxmem="512" />
+	<view limitview="auto" />
+
+	<!-- Optimisation du chargement des tiles -->
+	<display details="16" />
+
 	<include url="skin/vtourskin.xml" />
                  <include url="%VIEWER%/plugins/contextmenu.xml" />
 <include url="%VIEWER%/plugins/iphone_fullscreen_swipe.xml" />
@@ -933,8 +949,20 @@
 		);
 	</action>
 
-	<!-- Événement global : maintenir le titre à chaque changement de scène -->
-	<events name="global_events" onloadcomplete="set_page_title(); clear_skin_hotspot_tooltips();" />
+	<!-- Événement global : maintenir le titre à chaque changement de scène et précharger les scènes voisines -->
+	<events name="global_events" onloadcomplete="set_page_title(); clear_skin_hotspot_tooltips(); preload_neighbours();" />
+
+	<!-- Action pour précharger les scènes voisines intelligemment -->
+	<action name="preload_neighbours">
+		<!-- Précharger la scène suivante -->
+		if(scene[get(xml.nextscene_index)],
+			preloadscene(get(xml.nextscene_index));
+		);
+		<!-- Précharger la scène précédente -->
+		if(scene[get(xml.prevscene_index)],
+			preloadscene(get(xml.prevscene_index));
+		);
+	</action>
 
 	<!-- Logo dans le header -->
 	<layer name="header_logo"
