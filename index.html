@@ -42,12 +42,59 @@
 </head>
 <body>
 
+<!-- Musique d'arrière-plan -->
+<audio id="bgmusic" loop preload="auto">
+	<source src="https://orange-keeley-69.tiiny.site/music1.mp3" type="audio/mpeg">
+</audio>
+
 <script src="tour.js"></script>
 
 <div style="width:100%;height:100%;">
 	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;text-align:center;"><td>ERROR:<br><br>Javascript not activated<br><br></td></tr></table></noscript>
 	<script>
 		embedpano({xml:"tour.xml", passQueryParameters:"startscene,startlookat"});
+
+		// Démarrer la musique après interaction utilisateur
+		const audio = document.getElementById('bgmusic');
+		audio.volume = 0.3;
+
+		// Fonctions de contrôle de la musique appelées depuis krpano
+		function playMusic() {
+			audio.play();
+		}
+
+		function pauseMusic() {
+			audio.pause();
+		}
+
+		function muteMusic() {
+			audio.volume = 0.0;
+		}
+
+		function unmuteMusic() {
+			audio.volume = 0.3;
+		}
+
+		// Démarrer la musique immédiatement
+		setTimeout(function() {
+			audio.play().catch(function(error) {
+				console.log('Autoplay bloqué, en attente d\'interaction utilisateur');
+			});
+		}, 100);
+
+		// Aussi essayer au premier mouvement de souris
+		document.addEventListener('mousemove', function() {
+			if (audio.paused) {
+				audio.play();
+			}
+		}, { once: true });
+
+		// Et au premier clic
+		document.addEventListener('click', function() {
+			if (audio.paused) {
+				audio.play();
+			}
+		}, { once: true });
 	</script>
 </div>
 

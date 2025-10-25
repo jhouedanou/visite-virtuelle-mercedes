@@ -18,10 +18,10 @@
 	               autotour="false"
 	               littleplanetintro="true"
 	               followmousecontrol="false"
-	               title="true"
-	               thumbs="true"
+	               title="false"
+	               thumbs="false"
 	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
-	               thumbs_opened="true"
+	               thumbs_opened="false"
 	               thumbs_text="true"
 	               thumbs_dragging="true"
 	               thumbs_onhoverscrolling="true"
@@ -40,10 +40,10 @@
 	               loadingtext=""
 	               layout_width="100%"
 	               layout_maxwidth="814"
-	               controlbar_width="-24"
-	               controlbar_height="40"
-	               controlbar_offset="-40"
-	               controlbar_offset_closed="-40"
+	               controlbar_width="0"
+	               controlbar_height="0"
+	               controlbar_offset="0"
+	               controlbar_offset_closed="0"
 	               controlbar_overlap.no-fractionalscaling="10"
 	               controlbar_overlap.fractionalscaling="0"
 	               design_skin_images="vtourskin.png"
@@ -70,9 +70,106 @@
 	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
 	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
 
+	<!-- Pas de skin - interface complètement masquée -->
+
 
 	<!-- Configuration globale de l'autorotation pour toutes les scènes -->
 	<autorotate enabled="false" waittime="1.0" speed="2.0" horizon="0.0" tofov="120.0" />
+
+	<!-- Boutons de contrôle de musique (layers persistants) -->
+	<layer name="music_playpause"
+	       url="skin/pause_icon.svg"
+	       keep="true"
+	       align="righttop"
+	       x="20"
+	       y="20"
+	       width="50"
+	       height="50"
+	       handcursor="true"
+	       zorder="10001"
+	       onclick="toggle_music();"
+	       onover="tween(scale, 1.1, 0.2);"
+	       onout="tween(scale, 1.0, 0.2);"
+	       />
+
+	<layer name="music_volume"
+	       url="skin/sound_on_icon.svg"
+	       keep="true"
+	       align="righttop"
+	       x="80"
+	       y="20"
+	       width="50"
+	       height="50"
+	       handcursor="true"
+	       zorder="10001"
+	       onclick="toggle_mute();"
+	       onover="tween(scale, 1.1, 0.2);"
+	       onout="tween(scale, 1.0, 0.2);"
+	       />
+
+	<!-- Action pour initialiser l'état de la musique -->
+	<action name="init_background_music" autorun="onstart">
+		set(music_playing, true);
+		set(music_muted, false);
+	</action>
+
+	<!-- Action pour toggle play/pause -->
+	<action name="toggle_music">
+		if(music_playing,
+			<!-- Pause la musique -->
+			jscall(pauseMusic());
+			set(layer[music_playpause].url, skin/play_icon.svg);
+			set(music_playing, false);
+		,
+			<!-- Play la musique -->
+			jscall(playMusic());
+			set(layer[music_playpause].url, skin/pause_icon.svg);
+			set(music_playing, true);
+		);
+	</action>
+
+	<!-- Action pour toggle mute/unmute -->
+	<action name="toggle_mute">
+		if(music_muted,
+			<!-- Unmute -->
+			jscall(unmuteMusic());
+			set(layer[music_volume].url, skin/sound_on_icon.svg);
+			set(music_muted, false);
+		,
+			<!-- Mute -->
+			jscall(muteMusic());
+			set(layer[music_volume].url, skin/sound_off_icon.svg);
+			set(music_muted, true);
+		);
+	</action>
+
+	<!-- Action pour masquer complètement l'interface -->
+	<action name="hide_all_interface" autorun="onstart">
+		<!-- Masquer tous les layers de contrôle de la skin -->
+		set(layer[skin_layer_caption].visible, false);
+		set(layer[skin_layer_control].visible, false);
+		set(layer[skin_layer_thumbs].visible, false);
+		set(layer[skin_scroll_window].visible, false);
+		set(layer[skin_splitter_bottom].visible, false);
+		set(layer[skin_splitter_top].visible, false);
+		set(layer[skin_control_bar].visible, false);
+		set(layer[bgtexture].visible, false);
+	</action>
+
+	<!-- Action pour personnaliser le menu contextuel -->
+	<action name="customize_contextmenu" autorun="onstart">
+		wait(1.0);
+		if(plugin[contextmenu],
+			plugin[contextmenu].item[sep_custom].separator = true;
+			plugin[contextmenu].item[bigfive].caption = Développé par Big Five 360;
+			plugin[contextmenu].item[bigfive].onclick = openurl('https://bigfive360.com', _blank);
+		);
+	</action>
+
+	<!-- Action pour ouvrir une URL -->
+	<action name="open_bigfive_url">
+		openurl('https://bigfive360.com', _blank);
+	</action>
 
 	<!-- Style pour les hotspots d'information avec icône "i" -->
 	<style name="info"
@@ -841,7 +938,7 @@
 
 	<!-- Logo dans le header -->
 	<layer name="header_logo"
-	       url="skin/Logo.png"
+	       url="skin/rightLogo.png"
 	       align="lefttop"
 	       x="25"
 	       y="10"
