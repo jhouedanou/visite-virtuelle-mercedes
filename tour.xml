@@ -20,8 +20,8 @@
                  <include url="%VIEWER%/plugins/contextmenu.xml" />
 <include url="%VIEWER%/plugins/iphone_fullscreen_swipe.xml" />
 
-	<!-- GTransition Plugin Settings -->
-	<gtransition_settings transition_depth="500" transition_speed="0.5" blending_delay="0.25" loadscene_blend="BLEND(0.7, easeInQuart)" loadscene_flags="KEEPVIEW" show_contextmenu="true"/>
+	<!-- GTransition Plugin Settings - avec MERGE pour respecter l'orientation -->
+	<gtransition_settings transition_depth="500" transition_speed="0.5" blending_delay="0.5" loadscene_blend="BLEND(0.7, easeInQuart)" loadscene_flags="MERGE" show_contextmenu="true"/>
 
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="false"
@@ -57,7 +57,6 @@
 	               loadscene_blend="get:gtransition_settings.loadscene_blend"
 	               loadscene_blend_prev="get:gtransition_settings.loadscene_blend"
 	               loadscene_blend_next="get:gtransition_settings.loadscene_blend"
-	               webvr_gyro_keeplookingdirection="true"
 	               loadingtext=""
 	               layout_width="100%"
 	               layout_maxwidth="814"
