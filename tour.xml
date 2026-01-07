@@ -19,6 +19,10 @@
 	<include url="skin/vtourskin.xml" />
                  <include url="%VIEWER%/plugins/contextmenu.xml" />
 <include url="%VIEWER%/plugins/iphone_fullscreen_swipe.xml" />
+
+	<!-- GTransition Plugin Settings -->
+	<gtransition_settings transition_depth="500" transition_speed="0.5" blending_delay="0.25" loadscene_blend="BLEND(0.7, easeInQuart)" loadscene_flags="KEEPVIEW" show_contextmenu="true"/>
+
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="false"
 	               maps_type="openstreetmaps"
@@ -49,10 +53,11 @@
 	               tooltips_hotspots="true"
 	               tooltips_mapspots="true"
 	               deeplinking="false"
-	               loadscene_flags="MERGE"
-	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
-	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
-	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadscene_flags="get:gtransition_settings.loadscene_flags"
+	               loadscene_blend="get:gtransition_settings.loadscene_blend"
+	               loadscene_blend_prev="get:gtransition_settings.loadscene_blend"
+	               loadscene_blend_next="get:gtransition_settings.loadscene_blend"
+	               webvr_gyro_keeplookingdirection="true"
 	               loadingtext=""
 	               layout_width="100%"
 	               layout_maxwidth="814"
@@ -2288,5 +2293,8 @@
 
 	</scene>
 
+	<!-- GTransition Plugin -->
+	<include url="plugins/gtransition/gtransition_settings.xml" />
+	<include url="plugins/gtransition/gtransition.xml" />
 
 </krpano>
