@@ -21,7 +21,7 @@
 <include url="%VIEWER%/plugins/iphone_fullscreen_swipe.xml" />
 
 	<!-- GTransition Plugin Settings -->
-	<gtransition_settings transition_depth="500" transition_speed="0.5" blending_delay="-0.4" loadscene_blend="BLEND(0.7, easeInQuart)" loadscene_flags="KEEPVIEW" show_contextmenu="true"/>
+	<gtransition_settings transition_depth="500" transition_speed="0.5" blending_delay="-0.4" loadscene_blend="BLEND(0.7, easeInQuart)" loadscene_flags="MERGE" show_contextmenu="true"/>
 
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="false"
@@ -95,7 +95,7 @@
 
 
 	<!-- Configuration globale de l'autorotation pour toutes les scènes -->
-	<autorotate enabled="false" waittime="1.0" speed="2.0" horizon="0.0" tofov="120.0" />
+	<autorotate enabled="false" waittime="0.0" speed="5.5" horizon="0.0" tofov="120.0" />
 
 	<!-- Boutons de contrôle de musique (layers persistants) -->
 	<layer name="music_playpause"
@@ -1163,7 +1163,7 @@
 
 	</scene>
 
-	<scene name="scene_10_interieur" title="10-interieur" onstart="" thumburl="panos/10_interieur.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_10_interieur" title="10-interieur" onstart="autorotate.start();" thumburl="panos/10_interieur.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1278,7 +1278,7 @@
 
 	</scene>
 
-	<scene name="scene_13_interieur" title="13-interieur" onstart="" thumburl="panos/13_interieur.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_13_interieur" title="13-interieur" onstart="autorotate.start();" thumburl="panos/13_interieur.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1884,7 +1884,7 @@
 
 	</scene>
 
-	<scene name="scene_32bd_interieur" title="32bd-interieur" onstart="" thumburl="panos/R0011193_HDR_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_32bd_interieur" title="32bd-interieur" onstart="autorotate.start();" thumburl="panos/R0011193_HDR_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -1985,7 +1985,7 @@
 
 	</scene>
 
-	<scene name="scene_32g_inteireur" title="32g-inteireur" onstart="" thumburl="panos/32g_inteireur.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_32g_inteireur" title="32g-inteireur" onstart="autorotate.start();" thumburl="panos/32g_inteireur.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -2154,7 +2154,7 @@
 
 	</scene>
 
-	<scene name="scene_41_interieur" title="41-interieur" onstart="" thumburl="panos/41_interieur.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_41_interieur" title="41-interieur" onstart="autorotate.start();" thumburl="panos/41_interieur.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
